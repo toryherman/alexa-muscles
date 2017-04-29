@@ -125,6 +125,90 @@ module.export = {
       'insertion': ['superficial perineal membrane', 'dorsal penile or clitoral aponeurosis'],
       'action': ['male: aids emptying of urine and ejaculate from urethra', 'female: closes vaginal introitus'],
       'nerve': ['perineal branch of pudendal nerve (S2 3 4)']
+    },
+    'constrictor of pharynx inferior': { // or inferior constrictor
+      'origin': ['cricopharyngeus: lateral aspect of arch of cricoid cartilage', 'thyropharyngeus: oblique line of laminar of thyroid cartilage and fibrous cricothyroid arch'],
+      'insertion': ['cricopharyngeus: continuous with muscle of opposite side, behind pharynx', 'thyropharyngeus: lower pharyngeal raphe'],
+      'action': ['aids swallowing', 'cricopharyngeus acts as upper esophageal sphincter'],
+      'nerve': ['pharyngeal plexus (9 10 and sympathetic) via pharyngeal branch of 10 with its motor fibers from cranial accessory nerve (11)']
+    },
+    'constrictor of pharynx middle': { // or middle constrictor
+      'origin': ['lower third of stylohyoid ligament', 'lesser cornu and superior border of greater cornu of hyoid bone'],
+      'insertion': ['middle portion of pharyngeal raphe'],
+      'action': ['aids swallowing'],
+      'nerve': ['pharyngeal plexus (9 10 and sympathetic), via pharyngeal branch of 10 with its motor fibers from cranial accessory nerve (11)']
+    },
+    'constrictor of pharynx superior': { // or superior constrictor
+      'origin': ['lower two thirds of medial pterygoid plate', 'pterygomandibular raphe and posterior end of mylohyoid line on mandible'],
+      'insertion': ['upper midline pharyngeal raphe and pharyngeal tubercle of clivus of occiput'],
+      'action': ['aids swallowing'],
+      'nerve': ['pharyngeal plexus (9 10 and sympathetic) via pharyngeal branch of 10 with its motor fibers from cranial accessory nerve (11)']
+    },
+    'coracobrachialis': {
+      'origin': ['coracoid process of scapula with biceps brachii'],
+      'insertion': ['upper half of medial border of humerus'],
+      'action': ['flexes and weakly adducts arm'],
+      'nerve': ['musculocutaneous nerve (C5 6 7) from lateral cord']
+    },
+    'corrugator supercilii': {
+      'origin': ['medial superciliary arch'],
+      'insertion': ['skin of medial forehead'],
+      'action': ['wrinkles forehead'],
+      'nerve': ['temporal branch of facial nerve (7)']
+    },
+    'cremaster': {
+      'origin': ['lower border of internal oblique', 'transversus abdominis in inguinal canal'],
+      'insertion': ['loops around spermatic cord and tunica vaginalis and some fibers return to attach to pubic tubercle'],
+      'action': ['retract testis'],
+      'nerve': ['genital branch (L2) of genitofemoral nerve (L1 2)']
+    },
+    'cricothyroid': {
+      'origin': ['anterolateral aspect of cricoid cartilage'],
+      'insertion': ['inferior cornu and lower laminar of thyroid cartilage'],
+      'action': ['lengthens and tenses vocal cords by tilting thyroid cartilage forwards'],
+      'nerve': ['external branch of superiorlaryngeal branch of vagus nerve (10)']
+    },
+    'dartos': {
+      'origin': ['subcutaneous tissue of scrotum', 'superficial to superficial fascia (colles)'],
+      'insertion': ['skin and midline fibrous septum of scrotum'],
+      'action': ['corrugates scrotal skin'],
+      'nerve': ['sympathetic fibers from genital branch (L2) of genitofemoral nerve (L1 2)']
+    },
+    'deep transverse perinei': {
+      'origin': ['medial aspect of ischiopubic ramus', 'body of ischium'],
+      'insertion': ['midline raphe and perineal body'],
+      'action': ['fixes perineal body', 'supports pelvic viscera'],
+      'nerve': ['perineal branch of pudendal nerve (S2 3 4)']
+    },
+    'deltoid': {
+      'origin': ['lateral third of clavicle', 'acromion', 'spine of scapula to deltoid tubercle'],
+      'insertion': ['middle of lateral surface of humerus (deltoid tuberosity)'],
+      'action': ['abducts arm', 'anterior fibers flex and medial rotate', 'posterior fibers extend and lateral rotate'],
+      'nerve': ['axillary nerve (C5 6) from posterior cord']
+    },
+    'depressor anguli oris': {
+      'origin': ['outer surface of mandible posterior to oblique line'],
+      'insertion': ['modiolus at angle of mouth'],
+      'action': ['depresses and draws angle of mouth laterally'],
+      'nerve': ['mandibular branch of facial nerve (7)']
+    },
+    'depressor labii inferioris': {
+      'origin': ['outer surface of mandible along oblique line'],
+      'insertion': ['skin of lower lip'],
+      'action': ['depresses and draws lower lip laterally'],
+      'nerve': ['mandibular branch of facial nerve (7)']
+    },
+    'diaphragm': {
+      'origin': ['vertebral: crura from bodies of L1 2 (left), L1 3 (right)', 'costal: medial and lateral arcuate ligaments, inner aspect of lower six ribs', 'sternal: two slips from posterior aspect of xiphoid'],
+      'insertion': ['central tendon'],
+      'action': ['inspiration', 'assists in raising intra-abdominal pressure'],
+      'nerve': ['phrenic nerve (motor) (C3 4 5)', 'sensory: phrenic, intercostals (6 through 12) and upper two lumbar nerve roots']
+    },
+    'digastric': {
+      'origin': ['anterior belly: digastric fossa on posterior surface of symphysis menti', 'posterior belly: base of medial aspect of mastoid process'],
+      'insertion': ['fibrous loop to lesser cornu of hyoid bone'],
+      'action': ['elevates hyoid bone', 'aids swallowing', 'depresses mandible'],
+      'nerve': ['anterior belly: mylohyoid nerve (5)', 'posterior belly: facial nerve (7)']
     }
   }
 }
