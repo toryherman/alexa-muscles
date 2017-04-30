@@ -480,7 +480,7 @@ module.export = {
       'action': ['fixes intercostal spaces during respiration', 'aids forced inspiration by elevating ribs'],
       'nerve': ['muscular collateral branches of intercostal nerves']
     },
-    'internal oblique abdominus': { // internal abdominal oblique?
+    'internal oblique abdominis': { // internal abdominal oblique?
       'origin': ['lumbar fascia', 'anterior two thirds of iliac crest', 'lateral two thirds of inguinal ligament'],
       'insertion': ['costal margin', 'aponeurosis of rectus sheath', 'conjoint tendon to pubic crest and pectineal line'],
       'action': ['supports abdominal wall', 'assists forced respiration', 'aids raising intra-abdominal pressure', 'abducts and rotates trunk'],
@@ -653,6 +653,642 @@ module.export = {
       'insertion': ['extensor expansion of fingers 2 through 5 on the radial side'],
       'action': ['flexes metacarpophalangeal joints', 'extends interphalangeal joints of fingers'],
       'nerve': ['lateral 2: median nerve (C8, T1)', 'medial 2: deep branch of ulnar nerve (C8, T1)']
+    },
+    'masseter': {
+      'origin': ['anterior two thirds of zygomatic arch', 'zygomatic process of maxilla'],
+      'insertion': ['lateral surface of angle', 'lower ramus of mandible'],
+      'action': ['elevates mandible'],
+      'nerve': ['anterior division of mandibular nerve (5)']
+    },
+    'medial pterygoid': {
+      'origin': ['deep head: medial side of lateral pterygoid plate and fossa between medial and lateral plates', 'superficial head: tuberosity of maxilla and pyramidal process of palatine bone'],
+      'insertion': ['medial aspect of angle of mandible'],
+      'action': ['elevates the mandible', 'assists closing the jaw', 'assists the lateral pterygoids in moving the jaw side to side'],
+      'nerve': ['nerve to medial pterygoid']
+    },
+    'medial rectus': {
+      'origin': ['medial tendinous ring with orbit'],
+      'insertion': ['medial sclera anterior to equator of eyeball'],
+      'action': ['adducts eye'],
+      'nerve': ['inferior division oculomotor nerve (3)']
+    },
+    'mentalis': {
+      'origin': ['incisive fossa on anterior aspect of mandible'],
+      'insertion': ['skin of chin'],
+      'action': ['elevates and wrinkles skin of chin', 'protrudes lower lip'],
+      'nerve': ['mandibular branch of facial nerve (7)']
+    },
+    'musculus uvulae': { // m. uvulae?
+      'origin': ['posterior border of hard palate'],
+      'insertion': ['palatine aponeurosis'],
+      'action': ['shapes uvula'],
+      'nerve': ['pharyngeal branch of vagus nerve (10) with its motor fibers from cranial accessory nerve (11)']
+    },
+    'mylohyoid': {
+      'origin': ['mylohyoid line on internal aspect of mandible'],
+      'insertion': ['anterior three quarters: midline raphe', 'posterior quarter: superior border of body of hyoid bone'],
+      'action': ['elevates hyoid bone', 'supports and raises floor of mouth', 'aids in mastication and swallowing'],
+      'nerve': ['mylohyoid nerve (5)']
+    },
+    'nasalis': { // compressor, dilator, and depressor
+      'origin': ['frontal process of maxilla'],
+      'insertion': ['nasal aponeurosis'],
+      'action': ['opens and closes nostrils'],
+      'nerve': ['buccal branch of facial nerve (7)']
+    },
+    'oblique arytenoid': {
+      'origin': ['muscular process of arytenoid cartilage'],
+      'insertion': ['superior pole of opposite arytenoid cartilage'],
+      'action': ['adducts arytenoid cartilages'],
+      'nerve': ['recurrent laryngeal branch of vagus nerve (10)']
+    },
+    'obliquus capitis inferior': {
+      'origin': ['spinous process of axis (C2)'],
+      'insertion': ['lateral mass of atlas (C1)'],
+      'action': ['rotates atlanto-axial joint'],
+      'nerve': ['suboccipital nerve']
+    },
+    'obliquus capitis superior': {
+      'origin': ['lateral mass of atlas (C1)'],
+      'insertion': ['lateral half of interior nuchal line'],
+      'action': ['laterally flexes atlanto-occipital joint'],
+      'nerve': ['suboccipital nerve']
+    },
+    'obturator externus': {
+      'origin': ['outer obturator membrane', 'rim of pubis and ischium bordering membrane'],
+      'insertion': ['trochanteric fossa on medial surface of greater trochanter'],
+      'action': ['laterally rotates hip'],
+      'nerve': ['posterior division of obturator nerve (L2, 3, 4)']
+    },
+    'obturator internus': { // obturator internus a? b?
+      'origin': ['inner surface of obturator membrane', 'rim of pubis and ischium bordering membrane'],
+      'insertion': ['middle part of medial aspect of greater trochanter of femur'],
+      'action': ['laterally rotates and stabilizes hip'],
+      'nerve': ['nerve to obturator internus (L5, S1, 2)']
+    },
+    'omohyoid': {
+      'origin': ['suprascapular ligament', 'adjacent scapula'],
+      'insertion': ['inferior border of body of hyoid bone'],
+      'action': ['depresses hyoid bone and larynx'],
+      'nerve': ['ansa cervicalis nerve (C1, 2, 3)']
+    },
+    'opponen digiti minimi': {
+      'origin': ['flexor retinaculum', 'hook of hamate'],
+      'insertion': ['ulnar border of shaft of fifth metacarpal'],
+      'action': ['flexes and laterally rotates carpometacarpal and metacarpophalangeal joints of little finger'],
+      'nerve': ['deep branch of ulnar nerve (C8, T1)']
+    },
+    'opponen pollicis': {
+      'origin': ['flexor retinaculum', 'tubercle of trapezium'],
+      'insertion': ['whole radial border of first metacarpal'],
+      'action': ['flexes and medially rotates carpometacarpal and metacarpophalangeal joints of thumb'],
+      'nerve': ['recurrent branch of median nerve (C8, T1)']
+    },
+    'orbicularis oculi': {
+      'origin': ['medial orbital margin', 'lacrimal sac'],
+      'insertion': ['lateral palpebral raphe'],
+      'action': ['closes eyelids', 'aids passage and drainage of tears'],
+      'nerve': ['temporal and zygomatic branches of facial nerve (7)']
+    },
+    'orbicularis oris': {
+      'origin': ['near midline of anterior surface of maxilla and mandible', 'modiolus at angle of mouth'],
+      'insertion': ['mucous membrane of margin of lips', 'raphe with buccinator at modiolus'],
+      'action': ['narrows orifice of mouth', 'purses lips', 'puckers edges of lips'],
+      'nerve': ['incisivus labii superioris and inferioris']
+    },
+    'palatoglossus': {
+      'origin': ['palatine aponeurosis'],
+      'insertion': ['posterolateral tongue'],
+      'action': ['elevates posterior tongue', 'closes oropharyngeal isthmus', 'aids initiation of swallowing'],
+      'nerve': ['pharyngeal branch of vagus nerve (10) with its motor fibers from cranial accessory nerve (11)']
+    },
+    'palatopharyngeus': {
+      'origin': ['palatine aponeurosis', 'posterior margin of hard palate'],
+      'insertion': ['upper border of thyroid cartilage'],
+      'action': ['elevates pharynx and larynx', 'closes nasopharyngeal isthmus in swallowing'],
+      'nerve': ['pharyngeal branch of vagus nerve (10) with its motor fibers from cranial accessory nerve (11)']
+    },
+    'palmaris brevis': {
+      'origin': ['flexor retinaculum', 'palmar aponeurosis'],
+      'insertion': ['skin of palm in dermis'],
+      'action': ['steadies and corrugates skin of palm to help with grip'],
+      'nerve': ['superficial branch of ulnar nerve (C8, T1)']
+    },
+    'palmaris longus': {
+      'origin': ['common flexor origin of medial epicondyle of humerus'],
+      'insertion': ['flexor retinaculum', 'palmar aponeurosis'],
+      'action': ['flexis wrist', 'tenses palmar aponeurosis'],
+      'nerve': ['median nerve (C7, 8)']
+    },
+    'pectineus': {
+      'origin': ['pectineal line of pubis', 'narrow area of superior pubic ramus below it'],
+      'insertion': ['vertical line between spiral line and gluteal crest below lesser trochanter of femur'],
+      'action': ['flexes, adducts, and medially rotates hip'],
+      'nerve': ['anterior division of femoral nerve (L2, 3)']
+    },
+    'pectoralis major': {
+      'origin': ['clavicular head: anterior border of medial of the clavicle', 'sternocostal head: lateral manubrium and sternum, six upper costal cartilages, and external oblique aponeurosis'],
+      'insertion': ['lateral lip of bicipital groove of humerus', 'anterior lip of deltoid tuberosity'],
+      'action': ['clavicular head: flexes and adducts arm', 'sternocostal head: adducts and medially rotates arm'],
+      'nerve': ['medial pectoral nerve', 'lateral pectoral nerve (C6, 7, 8)']
+    },
+    'pectoralis minor': {
+      'origin': ['third', 'fourth', 'fifth ribs'],
+      'insertion': ['medial and upper surface of coracoid process of scapula'],
+      'action': ['elevates ribs', 'protracts scapula'],
+      'nerve': ['medial pectoral nerve (C8, T1)']
+    },
+    'peroneus brevis': {
+      'origin': ['lower two thirds of lateral shaft of fibula'],
+      'insertion': ['tuberosity of base of fifth metatarsal'],
+      'action': ['plantar flexes and everts foot', 'supports lateral longitudinal arch'],
+      'nerve': ['superficial peroneal nerve (L5, S1)']
+    },
+    'peroneus longus': {
+      'origin': ['upper two thirds of lateral shaft of fibula', 'head of fibula and superior tibiofibular joint'],
+      'insertion': ['plantar aspect of base of first metatarsal and medial cuneiform'],
+      'action': ['plantar flexes and everts foot', 'support lateral longitudinal and transverse arches'],
+      'nerve': ['superficial peroneal nerve (L5, S1)']
+    },
+    'peroneus tertius': {
+      'origin': ['third quarter of anterior shaft of fibula'],
+      'insertion': ['shaft and base of fifth metatarsal'],
+      'action': ['extends and everts foot'],
+      'nerve': ['deep peroneal nerve (L5, S1)']
+    },
+    'piriformis': {
+      'origin': ['second, third, and fourth costotransverse base of anterior sacrum'],
+      'insertion': ['anterior part of medial aspect of greater trochanter of femur'],
+      'action': ['laterally rotates and stabilizes hip'],
+      'nerve': ['anterior primary rami of S1, 2']
+    },
+    'plantaris': {
+      'origin': ['lateral supracondylar ridge of femur above lateral head of gastrocnemius'],
+      'insertion': ['tendo calcaneus'],
+      'action': ['plantar flexes foot', 'flexes knee'],
+      'nerve': ['tibial nerve (S1, 2)']
+    },
+    'platysma': {
+      'origin': ['skin over lower neck and upper lateral chest'],
+      'insertion': ['inferior border of mandible', 'skin over lower face and angle of mouth'],
+      'action': ['depresses and wrinkles skin of lower face and mouth', 'aids forced depression of mandible'],
+      'nerve': ['cervical branch of facial nerve (7)']
+    },
+    'popliteus': {
+      'origin': ['posterior shaft of tibia above soleal line and below tibial condyles'],
+      'insertion': ['middle of three facets on lateral surface of lateral condyle of femur'],
+      'action': ['unlocks extended knee by lateral rotation of femur on tibia', 'pulls back lateral meniscus'],
+      'nerve': ['tibial nerve (L5, S1)']
+    },
+    'posterior cricoarytenoid': {
+      'origin': ['posterior aspect of cricoid cartilage'],
+      'insertion': ['muscular process of arytenoid cartilage'],
+      'action': ['abducts and laterally rotates arytenoid cartilage'],
+      'nerve': ['recurrent laryngeal branch of vagus nerve (10)']
+    },
+    'procerus': {
+      'origin': ['nasal bone and cartilages'],
+      'insertion': ['skin of medial forehead'],
+      'action': ['wrinkles and frowns forehead'],
+      'nerve': ['temporal branch of facial nerve (7)']
+    },
+    'pronator quadratus': {
+      'origin': ['lower quarter of anteromedial shaft of ulna'],
+      'insertion': ['lower quarter of anterolateral shaft of radius'],
+      'action': ['pronates forearm'],
+      'nerve': ['anterior interosseous nerve (C8)']
+    },
+    'pronator teres': {
+      'origin': ['humeral head: medial epicondyle, medial supracondylar ridge, and medial intermuscular septum', 'ulnar head: medial border of coronoid process'],
+      'insertion': ['middle of lateral surface of body of radius'],
+      'action': ['pronates forearm', 'flexes elbow'],
+      'nerve': ['median nerve (C6, 7)']
+    },
+    'psoas major': {
+      'origin': ['transverse process of L1 through 5', 'bodies of T12 through L5', 'intervertebral discs below bodies of T12 through L4'],
+      'insertion': ['middle surface of lesser trochanter of femur'],
+      'action': ['flexes and laterally rotates hip'],
+      'nerve': ['anterior primary rami of L1, 2']
+    },
+    'psoas minor': {
+      'origin': ['bodies of T12 and L1'],
+      'insertion': ['fascia over psoas major', 'iliacus'],
+      'action': ['weakly flexes trunk'],
+      'nerve': ['anterior primary rami of L1']
+    },
+    'pyramidalis': {
+      'origin': ['pubic crest anterior to origin of rectus abdominis'],
+      'insertion': ['lower linea alba'],
+      'action': ['reinforces lower rectus sheath'],
+      'nerve': ['subcostal nerve (T12)']
+    },
+    'quadratus femoris': {
+      'origin': ['lateral border of ischial tuberosity'],
+      'insertion': ['quadrate tubercle of femur'],
+      'action': ['laterally rotates and stabilizes hip'],
+      'nerve': ['nerve to quadratus femoris (L4, 5, S1)']
+    },
+    'quadratus lumborum': {
+      'origin': ['apexes of transverse process of L1 through 4', 'iliolumbar ligament', 'posterior third of iliac crest'],
+      'insertion': ['inferior border of twelfth rib'],
+      'action': ['laterally flexes trunk', 'fixes twelfth rib during respiration'],
+      'nerve': ['anterior primary rami (T12 through L3)']
+    },
+    'quadratus plantae': {
+      'origin': ['lateral head: tuberosity of calcaneus', 'medial head: medial side of calcaneus'],
+      'insertion': ['tendons of flexor digitorum longus'],
+      'action': ['flexes toes'],
+      'nerve': ['lateral plantar nerve (S2, S3)']
+    },
+    'rectus abdominis': {
+      'origin': ['pubic crest', 'pubic symphysis'],
+      'insertion': ['fifth, sixth, and seventh costal cartilages', 'medial inferiorcostal margin', 'posterior aspect of xiphoid'],
+      'action': ['flexes trunk', 'aids forced expiration', 'raises intra-abdominal pressure'],
+      'nerve': ['anterior primary rami (T7 through 12)']
+    },
+    'rectus capitis anterior': { // anterior? lateralis? posterior major? posterior minor?
+      'origin': ['lateral mass of atlas (C1)'],
+      'insertion': ['basilar occipital bone anterior to occipital condyle'],
+      'action': ['flexes atlanto-occipital joint'],
+      'nerve': ['anterior primary rami of C1']
+    },
+    'rectus capitis lateralis': {
+      'origin': ['lateral mass of atlas (C1)'],
+      'insertion': ['jugular process of occipital bone'],
+      'action': ['laterally flexes atlanto-occipital joint'],
+      'nerve': ['anterior primary rami of C1']
+    },
+    'rectus capitis posterior major': {
+      'origin': ['spinous process of axis (C2)'],
+      'insertion': ['lateral half of inferior nuchal line'],
+      'action': ['extends and rotates atlanto-occipital joint'],
+      'nerve': ['suboccipital nerve']
+    },
+    'rectus capitis posterior minor': {
+      'origin': ['posterior process of atlas (C1)'],
+      'insertion': ['medial half of inferior nuchal line'],
+      'action': ['extends and rotates atlanto-occipital joint'],
+      'nerve': ['suboccipital nerve']
+    },
+    'rectus femoris': {
+      'origin': ['straight head: anterior inferior iliac spine', 'reflected head: ilium above acetabulum'],
+      'insertion': ['quadriceps tendon to patella'],
+      'action': ['extends leg at knee', 'flexes thigh at hip'],
+      'nerve': ['posterior division of femoral nerve (L3, 4)']
+    },
+    'rhomboid major': { // rhomboid? major or minor?
+      'origin': ['spines of T2 through T5', 'suprasinous ligaments'],
+      'insertion': ['lower half of posteromedial border of scapula'],
+      'action': ['retracts and rotates scapula'],
+      'nerve': ['dorsal scapular nerve (C5)']
+    },
+    'rhomboid minor': {
+      'origin': ['nuchal ligaments', 'spinous processes of C7 through T1'],
+      'insertion': ['medial border of scapula'],
+      'action': ['retracts and rotates scapula'],
+      'nerve': ['dorsal scapular  nerve (C5)']
+    },
+    'risorius': {
+      'origin': ['deep fascia of face and parotid'],
+      'insertion': ['modiolus', 'skin at angle of mouth'],
+      'action': ['retracts angle of mouth'],
+      'nerve': ['buccal branch of facial nerve (7)']
+    },
+    'salpingopharyngeus': {
+      'origin': ['inferior cartilage and mucosa of pharyngeal orifice of auditory tube'],
+      'insertion': ['upper border of thyroid cartilage', 'inferior constrictor muscle fibers'],
+      'action': ['elevates pharynx and larynx', 'aids swallowing', 'opens auditory canal during swallowing'],
+      'nerve': ['pharyngeal branch of vagus nerve (10) with its motor fibers from cranial accessory nerve (11)']
+    },
+    'sartorius': {
+      'origin': ['anterior superior iliac spine of pelvic bone'],
+      'insertion': ['upper medial surface of shaft of tibia'],
+      'action': ['flexes, abducts, and laterally rotates thigh at hip', 'flexes and medially rotates leg at knee'],
+      'nerve': ['anterior division of femoral nerve (L3, 4)']
+    },
+    'scalenus anterior': {
+      'origin': ['anterior tubercles of transverse processes of C3 through 6'],
+      'insertion': ['scalene tubercle on superior aspect of first rib'],
+      'action': ['aids inspiration', 'laterally flexes neck'],
+      'nerve': ['anterior primary rami of C5, 6']
+    },
+    'scalenus medius': {
+      'origin': ['posterior tubercles of transverse processes of C2 through 7'],
+      'insertion': ['superior aspect of neck of first rib'],
+      'action': ['aids inspiration'],
+      'nerve': ['anterior primary rami of C3 through 8']
+    },
+    'scalenus minimus': {
+      'origin': ['anterior tubercle of transverse process of C7'],
+      'insertion': ['suprapleural membrane'],
+      'action': ['supports suprapleural membrane'],
+      'nerve': ['anterior primary rami of C7']
+    },
+    'scalenus posterior': {
+      'origin': ['posterior tubercles of transverse processes of C4 through 6'],
+      'insertion': ['posterolateral surface of second rib'],
+      'action': ['aids inspiration'],
+      'nerve': ['anterior primary rami of C6 through 8']
+    },
+    'semimembranosus': {
+      'origin': ['upper outer quadrant of posterior surface of ischial tuberosity'],
+      'insertion': ['medial condyle of tibia'],
+      'action': ['flexes and medially rotates knee', 'extends hip'],
+      'nerve': ['tibial portion of sciatic nerve (L5, S1)']
+    },
+    'semitendinosus': {
+      'origin': ['upper inner quadrant of posterior surface of ischial tuberosity'],
+      'insertion': ['upper medial shaft of tibia'],
+      'action': ['flexes and medially rotates knee', 'extends hip'],
+      'nerve': ['tibial portion of sciatic nerve (L5, S1)']
+    },
+    'serratus anterior': {
+      'origin': ['upper eight ribs', 'anterior intercostal membranes from midclavicular line'],
+      'insertion': ['inner medial border of scapula'],
+      'action': ['laterally rotates and protracts scapula'],
+      'nerve': ['long thoracic nerve (C5, 6, 7)']
+    },
+    'serratus posterior inferior': {
+      'origin': ['spinous processes', 'supraspinous ligaments of T11 through L2'],
+      'insertion': ['posterior aspect of ribs 9 through 12'],
+      'action': ['assists forced expiration'],
+      'nerve': ['anterior primary rami (T9 through 12)']
+    },
+    'serratus posterior superior': {
+      'origin': ['spinous processes', 'supraspinous ligaments of C7 through T2'],
+      'insertion': ['posterior aspect of second through fifth ribs'],
+      'action': ['assists forced inspiration'],
+      'nerve': ['anterior primary rami (T2 through 5)']
+    },
+    'soleus': {
+      'origin': ['soleal line and middle third of posterior border of tibia', 'upper quarter of posterior shaft of fibula'],
+      'insertion': ['tendo calcaneus'],
+      'action': ['plantar flexes foot'],
+      'nerve': ['tibial nerve (S1, 2)']
+    },
+    'sphincter ani': {
+      'origin': ['circular anatomical sphincter'],
+      'insertion': ['deep, superficial, and subcutaneous portions'],
+      'action': ['maintains continence of feces'],
+      'nerve': ['inferior rectal branch of pudendal nerve (S2, 3, 4)']
+    },
+    'sphincter urethrae': {
+      'origin': ['circular anatomical sphincter'],
+      'insertion': ['fuses with deep transverse perinei'],
+      'action': ['maintains continence of urine'],
+      'nerve': ['perineal branch of pudendal nerve (S2, 3, 4)']
+    },
+    'splenius capitis': {
+      'origin': ['lower nuchal ligament', 'spinous processes', 'supraspinous ligaments T1 through 3'],
+      'insertion': ['lateral occiput between superior and inferior nuchal lines'],
+      'action': ['extends and rotates cervical spine'],
+      'nerve': ['posterior primary rami of C3, 4']
+    },
+    'splenius cervicis': {
+      'origin': ['spinous processes', 'supraspinous ligaments of T3 through 6'],
+      'insertion': ['posterior tubercles of transverse processes of C1 through 3'],
+      'action': ['extends and rotates cervical spine'],
+      'nerve': ['posterior primary rami of C5, 6']
+    },
+    'stapedius': {
+      'origin': ['posterior wall of middle ear'],
+      'insertion': ['neck of stapes'],
+      'action': ['protects and critically dampens ossicular chain'],
+      'nerve': ['facial nerve (7)']
+    },
+    'sternocleidomastoid': {
+      'origin': ['anterior and superior manubrium', 'superior medial third of clavicle'],
+      'insertion': ['lateral aspect of mastoid process', 'anterior half of superior nuchal line'],
+      'action': ['flexes and laterally rotates cervical spine', 'protracts head', 'extends neck'],
+      'nerve': ['spinal accessory nerve']
+    },
+    'sternohyoid': {
+      'origin': ['superior lateral posterior aspect of manubrium'],
+      'insertion': ['inferior border of body of hyoid bone'],
+      'action': ['depresses hyoid bone and larynx'],
+      'nerve': ['ansa cervicalis nerve (C1, 2, 3)']
+    },
+    'sternothyroid': {
+      'origin': ['medial posterior aspect of manubrium'],
+      'insertion': ['oblique line of lamina of thyroid cartilage'],
+      'action': ['depresses larynx'],
+      'nerve': ['ansa cervicalis nerve (C1, 2, 3)']
+    },
+    'styloglossus': {
+      'origin': ['anterior surface and apex of styloid process', 'upper quarter stylohyoid ligament'],
+      'insertion': ['superolateral sides of tongue'],
+      'action': ['retracts and elevates tongue', 'aids initiation of swallowing'],
+      'nerve': ['hypoglossal nerve (12)']
+    },
+    'stylohyoid': {
+      'origin': ['base of styloid process'],
+      'insertion': ['base of greater cornu of hyoid bone'],
+      'action': ['elevates and retracts hyoid bone', 'aids swallowing', 'elevates larynx'],
+      'nerve': ['mandibular branch of facial nerve (7)']
+    },
+    'stylopharyngeus': {
+      'origin': ['medial aspect of styloid process'],
+      'insertion': ['posterolateral border of thyroid cartilage'],
+      'action': ['elevates larynx and pharynx', 'aids swallowing'],
+      'nerve': ['muscular branch of glossopharyngeal nerve (9)']
+    },
+    'subclavius': {
+      'origin': ['costochondral junction of first rib'],
+      'insertion': ['subclavian groove on interior surface of middle third of clavicle'],
+      'action': ['depresses and steadies clavicle'],
+      'nerve': ['nerve to subclavius (C5, 6)']
+    },
+    'subcostalis': {
+      'origin': ['internal posterior aspects of lower six ribs'],
+      'insertion': ['internal aspects of ribs two to three levels below'],
+      'action': ['depresses lower ribs'],
+      'nerve': ['muscular collateral branches of intercostal nerves']
+    },
+    'subscapularis': {
+      'origin': ['medial two thirds of subscapular fossa'],
+      'insertion': ['lesser tuberosity of humerus', 'upper medial lip of bicipital groove', 'capsule of shoulder joint'],
+      'action': ['medially rotates arm', 'stabilizes shoulder joint'],
+      'nerve': ['upper and lower subscapular nerves (C5, 6)']
+    },
+    'superficial transverse perinei': {
+      'origin': ['body of ischium'],
+      'insertion': ['perineal body'],
+      'action': ['fixes perineal body'],
+      'nerve': ['perineal branch of pudendal nerve (S2, 3, 4)']
+    },
+    'superior oblique': {
+      'origin': ['body of sphenoid above tendinous ring'],
+      'insertion': ['posterosuperior quadrant of sclera behind equator of eyeball'],
+      'action': ['depresses eye in adduction', 'medially rotates eye in abduction'],
+      'nerve': ['trochlear nerve (4)']
+    },
+    'superior rectus': {
+      'origin': ['superior tendinous ring within orbit'],
+      'insertion': ['superior sclera anterior to equator of eyeball'],
+      'action': ['elevates eye', 'medially rotates eye in adduction'],
+      'nerve': ['superior division of oculomotor nerve (3)']
+    },
+    'supinator': {
+      'origin': ['lateral epicondyle of humerus', 'supinator crest of ulna', 'radial collateral ligament', 'annular ligament'],
+      'insertion': ['lateral proximal radial shaft'],
+      'action': ['supinates forearm'],
+      'nerve': ['posterior interosseous nerve (C5, 6)']
+    },
+    'supraspinatus': {
+      'origin': ['medial three quarters of supraspinous fossa of scapula'],
+      'insertion': ['superior facet on greater tuberosity of humerus', 'capsule of shoulder joint'],
+      'action': ['abducts arm', 'stabilizes shoulder joint'],
+      'nerve': ['suprascapular nerve (C5, 6)']
+    },
+    'temporalis': {
+      'origin': ['temporal fossa between inferior temporal line and infratemporal crest'],
+      'insertion': ['medial and anterior aspect of coronoid process of mandible'],
+      'action': ['elevates mandible'],
+      'nerve': ['deep temporal branchs from anterior division of mandibular nerve (5)']
+    },
+    'temporoparietalis': {
+      'origin': ['aponeurosis above auricularis'],
+      'insertion': ['galeal aponeurosis'],
+      'action': ['fixes galeal aponeurosis'],
+      'nerve': ['temporal branch of facial nerve (7)']
+    },
+    'tensor fascia lata': {
+      'origin': ['iliac crest'],
+      'insertion': ['iliotibial tract'],
+      'action': ['maintains extension of knee', 'abducts hip'],
+      'nerve': ['superior gluteal nerve (L4, 5, S1)']
+    },
+    'tensor tympani': {
+      'origin': ['cartilaginous and bony margins of auditory tube'],
+      'insertion': ['handle of malleus'],
+      'action': ['protects and critically dampens ossicular chain'],
+      'nerve': ['nerve to medial pterygoid']
+    },
+    'tensor veli palatini': {
+      'origin': ['scaphoid fossa', 'medial aspect of spine of sphenoid bone'],
+      'insertion': ['palatine aponeurosis'],
+      'action': ['tenses soft palate prior to elevation'],
+      'nerve': ['never to medial pterygoid']
+    },
+    'teres major': {
+      'origin': ['posterior aspect of the inferior angle of scapula'],
+      'insertion': ['medial lip of bicipital groove of humerus'],
+      'action': ['medially rotates and adducts arm', 'stabilizes shoulder joint'],
+      'nerve': ['lower subscapular nerve (C5, 6)']
+    },
+    'teres minor': {
+      'origin': ['lateral border of scapula'],
+      'insertion': ['inferior facet of greater tuberosity of humerus', 'capsule of shoulder joint'],
+      'action': ['laterally rotates arm', 'stabilizes shoulder joint'],
+      'nerve': ['axillary nerve (C5, 6)']
+    },
+    'thyroarytenoid': {
+      'origin': ['inner surface of thyroid cartilage'],
+      'insertion': ['vocal process of arytenoid cartilage'],
+      'action': ['shortens and relaxes vocal cords by medial rotation and protraction of arytenoid cartilage'],
+      'nerve': ['recurrent laryngeal branch of vagus nerve (10)']
+    },
+    'thryoepiglotticus': {
+      'origin': ['lower posterior surface of thyroid cartilage'],
+      'insertion': ['lateral border of epiglottis'],
+      'action': ['aids closure of additus to larynx'],
+      'nerve': ['recurrent laryngeal branch of vagus nerve (10)']
+    },
+    'thyrohyoid': {
+      'origin': ['oblique line of lamina of thyroid cartilage'],
+      'insertion': ['inferior border of body of hyoid bone'],
+      'action': ['elevates larynx', 'depresses hyoid bone'],
+      'nerve': ['C1 fibers carried by hypoglossal nerve (12)']
+    },
+    'tibialis anterior': {
+      'origin': ['upper half of lateral shaft of tibia', 'interosseous membrane'],
+      'insertion': ['inferomedial aspect of medial cuneiform', 'base of first metatarsal'],
+      'action': ['extends and inverts foot at ankle', 'supports medial longitudinal arch of foot'],
+      'nerve': ['deep peroneal nerve (L4, 5)']
+    },
+    'tibialis posterior': {
+      'origin': ['upper half of posterior shaft of tibia', 'upper half of fibula between medial nerve crest and interosseous border', 'interosseous'],
+      'insertion': ['tuberosity of navicular bone', 'all tarsal bones except talus', 'spring ligament'],
+      'action': ['plantar flexes and inverts foot', 'supports medial longitudinal arch of foot'],
+      'nerve': ['tibial nerve (L4, 5)']
+    },
+    'transverse arytenoid': {
+      'origin': ['posterior surface and muscular process of arytenoid cartilage'],
+      'insertion': ['corresponding surfaces of opposite cartilage'],
+      'action': ['adducts arytenoid cartilage'],
+      'nerve': ['recurrent laryngeal branch of vagus nerve (10)']
+    },
+    'transversospinalis multifidus': {
+      'origin': ['laminae of vertebra'],
+      'insertion': ['spinous processes two to three levels above'],
+      'action': ['extends spine'],
+      'nerve': ['posterior primary rami']
+    },
+    'transversospinalis rotatores': {
+      'origin': ['transverse processes'],
+      'insertion': ['spinous processes one above'],
+      'action': ['rotates spine'],
+      'nerve': ['posterior primary rami']
+    },
+    'transversospinalis semispinalis': {
+      'origin': ['transverse processes'],
+      'insertion': ['spinous processes above', 'occipital bone'],
+      'action': ['extends head and spine', 'laterally flexes spine'],
+      'nerve': ['posterior primary rami']
+    },
+    'transversus abdominis': {
+      'origin': ['costal margin', 'lumbar fascia', 'anterior two thirds of iliac crest', 'lateral half of inguinal ligament'],
+      'insertion': ['aponeurosis of posterior and anterior rectus sheath', 'conjoint tendon pubic crest and pectineal line'],
+      'action': ['supports abdominal wall', 'aids forced expiration and raising of intra-abdominal pressure'],
+      'nerve': ['anterior primary rami (T7 through 12)']
+    },
+    'transversus thoracis': {
+      'origin': ['lower third of inner aspect of sternum', 'lower three costosternal junctions'],
+      'insertion': ['second to sixth costal cartilages'],
+      'action': ['depresses upper ribs'],
+      'nerve': ['muscular collateral branchs of intercostal nerves']
+    },
+    'trapezius': {
+      'origin': ['medial third of superior nuchal line', 'nuchal ligament', 'spinous processes', 'supraspinous ligaments to T12'],
+      'insertion': ['external occipital protuberance', 'nuchal ligament', 'medial superior nuchal line', 'posterior border of the lateral third of clavicle', 'acromion process', 'spine of scapula'],
+      'action': ['laterally rotates, elevates, and retracts scapula'],
+      'nerve': ['spinal accessory nerve (C1 through 5)']
+    },
+    'triceps': { // triceps brachii?
+      'origin': ['long head: infraglenoid tubercle of scapula', 'lateral head: upper half of posterior humerus', 'medial head: lower half of posterior humerus'],
+      'insertion': ['olecranon process of ulna'],
+      'action': ['extends elbow', 'long head stabilizes shoulder joint', 'medial head retracts capsule of elbow joint on extension'],
+      'nerve': ['radial nerve (C7, 8)']
+    },
+    'vastus intermedius': {
+      'origin': ['anterior and lateral shaft of femur'],
+      'insertion': ['quadriceps tendon to patella'],
+      'action': ['extends knee'],
+      'nerve': ['posterior division of femoral nerve (L3, 4)']
+    },
+    'vastus lateralis': {
+      'origin': ['upper interotrochanteric line', 'base of greater trochanter', 'lateral linea aspera', 'lateral supracondylar ridge', 'lateral intermuscular septum'],
+      'insertion': ['lateral quadriceps tendon to patella'],
+      'action': ['extends knee'],
+      'nerve': ['posterior division of femoral nerve (L3, 4)']
+    },
+    'vastus medialis': {
+      'origin': ['lower interotrochanteric line', 'spiral line', 'medial linea aspera', 'medial intermuscular septum'],
+      'insertion': ['medial quadriceps tendon to patella'],
+      'action': ['extends knee', 'stabilizes patella'],
+      'nerve': ['posterior division of femoral nerve (L3, 4)']
+    },
+    'zygomaticus major': {
+      'origin': ['anterior surface of zygomatic bone'],
+      'insertion': ['modiolus at angle of mouth'],
+      'action': ['elevates and draws angle of mouth laterally'],
+      'nerve': ['buccal branch of facial nerve (7)']
+    },
+    'zygomaticus minor': {
+      'origin': ['lateral infraorbital margin'],
+      'insertion': ['skin and muscle of upper lip'],
+      'action': ['elevates and everts upper lip'],
+      'nerve': ['buccal branch of facial nerve (7)']
     }
   }
 }
