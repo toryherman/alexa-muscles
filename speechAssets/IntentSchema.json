@@ -1,0 +1,58 @@
+{
+  "intents": [
+    {
+      "intent": "MuscleIntent",
+      "slots": [
+        {
+          "name" : "Item",
+          "type": "LIST_OF_ITEMS"
+        }
+      ]
+    },
+    {
+      "intent": "OriginIntent",
+      "slots": [
+        {
+          "name" : "Item",
+          "type": "LIST_OF_ITEMS"
+        }
+      ]
+    },
+    {
+      "intent": "InsertionIntent",
+      "slots": [
+        {
+          "name" : "Item",
+          "type": "LIST_OF_ITEMS"
+        }
+      ]
+    },
+    {
+      "intent": "ActionIntent",
+      "slots": [
+        {
+          "name" : "Item",
+          "type": "LIST_OF_ITEMS"
+        }
+      ]
+    },
+    {
+      "intent": "NerveIntent",
+      "slots": [
+        {
+          "name" : "Item",
+          "type": "LIST_OF_ITEMS"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.RepeatIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    }
+  ]
+}

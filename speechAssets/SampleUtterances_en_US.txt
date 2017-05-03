@@ -1,0 +1,67 @@
+MuscleIntent {Item}
+MuscleIntent summarize {Item}
+MuscleIntent summarize the {Item}
+MuscleIntent give me a summary of {Item}
+MuscleIntent give me a summary of the {Item}
+MuscleIntent tell me about {Item}
+MuscleIntent tell me about the {Item}
+
+OriginIntent {Item} origin
+OriginIntent origin of {Item}
+OriginIntent tell me {Item} origin
+OriginIntent tell me the {Item} origin
+OriginIntent tell me the origin of {Item}
+OriginIntent tell me the origin of the {Item}
+OriginIntent what is {Item} origin
+OriginIntent what is the origin of {Item}
+OriginIntent what is the origin of the {Item}
+
+InsertionIntent {Item} insertion
+InsertionIntent insertion of {Item}
+InsertionIntent tell me {Item} insertion
+InsertionIntent tell me the {Item} insertion
+InsertionIntent tell me the insertion of {Item}
+InsertionIntent tell me the insertion of the {Item}
+InsertionIntent what is {Item} insertion
+InsertionIntent what is the insertion of {Item}
+InsertionIntent what is the insertion of the {Item}
+
+ActionIntent {Item} action
+ActionIntent {Item} actions
+ActionIntent action of {Item}
+ActionIntent actions of {Item}
+ActionIntent tell me {Item} action
+ActionIntent tell me {Item} actions
+ActionIntent tell me the {Item} action
+ActionIntent tell me the {Item} actions
+ActionIntent tell me the action of {Item}
+ActionIntent tell me the actions of {Item}
+ActionIntent tell me the action of the {Item}
+ActionIntent tell me the actions of the {Item}
+ActionIntent what is {Item} action
+ActionIntent what is the action of {Item}
+ActionIntent what is the action of the {Item}
+ActionIntent what are the actions of {Item}
+ActionIntent what are the actions of the {Item}
+
+NerveIntent {Item} nerve
+NerveIntent {Item} nerves
+NerveIntent nerve of {Item}
+NerveIntent nerve of the {Item}
+NerveIntent nerves of {Item}
+NerveIntent nerves of the {Item}
+NerveIntent tell me {Item} nerve
+NerveIntent tell me {Item} nerves
+NerveIntent tell me the {Item} nerve
+NerveIntent tell me the {Item} nerves
+NerveIntent tell me the nerve of {Item}
+NerveIntent tell me the nerves of {Item}
+NerveIntent tell me the nerve of the {Item}
+NerveIntent tell me the nerves of the {Item}
+NerveIntent what is {Item} nerve
+NerveIntent what is the nerve of {Item}
+NerveIntent what is the nerve of the {Item}
+NerveIntent what are the nerves of {Item}
+NerveIntent what are the nerves of the {Item}
+NerveIntent what nerve innervates {Item}
+NerveIntent what nerve innervates the {Item}
