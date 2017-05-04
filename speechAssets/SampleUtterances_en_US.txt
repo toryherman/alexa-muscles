@@ -8,10 +8,12 @@ MuscleIntent tell me about the {Item}
 
 OriginIntent {Item} origin
 OriginIntent origin of {Item}
+OriginIntent origin of {Item} is
 OriginIntent tell me {Item} origin
 OriginIntent tell me the {Item} origin
 OriginIntent tell me the origin of {Item}
 OriginIntent tell me the origin of the {Item}
+OriginIntent what origin of {Item} is
 OriginIntent what is {Item} origin
 OriginIntent what is the origin of {Item}
 OriginIntent what is the origin of the {Item}

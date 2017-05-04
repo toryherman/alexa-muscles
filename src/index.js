@@ -11,12 +11,16 @@
 'use strict';
 
 const Alexa = require('alexa-sdk');
-const recipes = require('./muscles');
+const muscles = require('./muscles');
 
-const APP_ID = "amzn1.ask.skill.26ff3d01-156a-4949-9503-6559d43fac38";
+const APP_ID = 'amzn1.ask.skill.26ff3d01-156a-4949-9503-6559d43fac38';
 
 let muscle;
 let itemName;
+let originString;
+let insertionString;
+let actionString;
+let nerveString;
 
 const handlers = {
   'LaunchRequest': function () {
@@ -25,35 +29,44 @@ const handlers = {
       // understood, they will be prompted again with this text.
       this.attributes.repromptSpeech = this.t('WELCOME_REPROMPT');
       this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech);
-      // console.log('In Launch');
-      // console.log(JSON.stringify(this.event));
   },
-  'MuscleIntent': function () {
-      this.attributes.i = 0;
+  'GetMuscle': function () {
       let itemSlot = this.event.request.intent.slots.Item;
 
       if (itemSlot && itemSlot.value) {
           itemName = itemSlot.value.toLowerCase();
       }
 
-      // if (windsors.indexOf(itemName) !== -1) {
-      //     itemName = 'windsor knot';
-      // } else if (halfs.indexOf(itemName) !== -1) {
-      //     itemName = 'half windsor knot';
-      // } else if (pratts.indexOf(itemName) !== -1) {
-      //     itemName = 'pratt knot';
-      // } else if (simples.indexOf(itemName) !== -1) {
-      //     itemName = 'four in hand knot';
-      // }
+      originString = 'The origin of ' + itemName + ' ';
+      insertionString = 'The insertion of ' + itemName + ' ';
+      actionString = 'The action of ' + itemName + ' ';
+      nerveString = 'The nerve of ' + itemName + ' ';
 
-      const myRecipes = this.t('RECIPES');
-      recipe = myRecipes[itemName];
+      const myMuscles = this.t('MUSCLES');
+      muscle = myMuscles[itemName];
+      let origin = muscle.origin;
+      let insertion = muscle.insertion;
+      let action = muscle.action;
+      let nerve = muscle.nerve;
 
-      // console.log('In RecipeIntent');
-      // console.log(JSON.stringify(this.event));
-      this.emitWithState('GetRecipe');
+      if (origin.length == 1) {
+        originString = 'is ' + origin[0];
+      } else {
+        originString = 'are ';
+        for (let i = 0; i < origin.length; i++) {
+          if (i == origin.length - 1) {
+            originString += 'and ' + origin[i];
+          } else {
+            originString += origin[i] + ', ';
+          }
+        }
+      }
   },
-  'OriginIntent': function () {},
+  'MuscleIntent': function () {},
+  'OriginIntent': function () {
+    this.GetMuscle();
+    this.emit(':tell', originString);
+  },
   'InsertionIntent': function () {},
   'ActionIntent': function () {},
   'NerveIntent': function () {},
@@ -99,7 +112,6 @@ const languageStrings = {
             HELP_MESSAGE: 'You can ask questions such as, how do I tie a windsor knot, or, you can say exit ... Now, what can I help you with?',
             HELP_REPROMPT: 'You can say things like, how do I tie a windsor knot, or you can say exit ... Now, what can I help you with?',
             STOP_MESSAGE: 'Goodbye!',
-            CONTINUE_MESSAGE: ' When you are ready to move on, say next.',
             RECIPE_HELP_MESSAGE: 'You can say repeat to hear the step again, next to move on, or start over.',
             RECIPE_HELP_REPROMPT: 'You can say main menu to choose another knot.',
             RECIPE_NOT_FOUND_MESSAGE: 'I\'m sorry, I currently do not know ',
