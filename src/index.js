@@ -15,61 +15,58 @@ const muscles = require('./muscles');
 
 const APP_ID = 'amzn1.ask.skill.26ff3d01-156a-4949-9503-6559d43fac38';
 
-let muscle;
 let itemName;
-let originString;
-let insertionString;
-let actionString;
-let nerveString;
 
 const handlers = {
   'LaunchRequest': function () {
       this.attributes.speechOutput = this.t('WELCOME_MESSAGE', this.t('SKILL_NAME'));
-      // If the user either does not reply to the welcome message or says something that is not
-      // understood, they will be prompted again with this text.
       this.attributes.repromptSpeech = this.t('WELCOME_REPROMPT');
       this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech);
   },
   'GetMuscle': function () {
+      const intentOptions = ['origin', 'insertion', 'action', 'nerve'];
+      const myMuscles = this.t('MUSCLES');
+
+      let intentArray = [];
       let itemSlot = this.event.request.intent.slots.Item;
+      let intent = this.event.request.intent.name;
+
+      if (intent == 'OriginIntent') {
+          intentArray.push('origin');
+      } else if (intent == 'InsertionIntent') {
+          intentArray.push('insertion');
+      } else if (intent == 'ActionIntent') {
+          intentArray.push('action');
+      } else if (intent == 'NerveIntent') {
+          intentArray.push('nerve');
+      } else if (intent == 'MuscleIntent') {
+          intentArray = intentOptions;
+      }
 
       if (itemSlot && itemSlot.value) {
           itemName = itemSlot.value.toLowerCase();
       }
 
-      originString = 'The origin of ' + itemName + ' ';
-      insertionString = 'The insertion of ' + itemName + ' ';
-      actionString = 'The action of ' + itemName + ' ';
-      nerveString = 'The nerve of ' + itemName + ' ';
-
-      const myMuscles = this.t('MUSCLES');
-      muscle = myMuscles[itemName];
-      let origin = muscle.origin;
-      let insertion = muscle.insertion;
-      let action = muscle.action;
-      let nerve = muscle.nerve;
-
-      if (origin.length == 1) {
-        originString = 'is ' + origin[0];
-      } else {
-        originString = 'are ';
-        for (let i = 0; i < origin.length; i++) {
-          if (i == origin.length - 1) {
-            originString += 'and ' + origin[i];
-          } else {
-            originString += origin[i] + ', ';
-          }
-        }
-      }
+      let response = buildResponseString(intentArray, myMuscles);
+      this.attributes.speechOutput = response + this.t('RESPONSE_END');
+      this.attributes.repromptSpeech = this.t('RESPONSE_REPROMPT');
+      this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech);
   },
-  'MuscleIntent': function () {},
+  'MuscleIntent': function () {
+      this.emit('GetMuscle');
+  },
   'OriginIntent': function () {
-    this.GetMuscle();
-    this.emit(':tell', originString);
+      this.emit('GetMuscle');
   },
-  'InsertionIntent': function () {},
-  'ActionIntent': function () {},
-  'NerveIntent': function () {},
+  'InsertionIntent': function () {
+      this.emit('GetMuscle');
+  },
+  'ActionIntent': function () {
+      this.emit('GetMuscle');
+  },
+  'NerveIntent': function () {
+      this.emit('GetMuscle');
+  },
   'AMAZON.HelpIntent': function () {
       this.attributes.speechOutput = this.t('HELP_MESSAGE');
       this.attributes.repromptSpeech = this.t('HELP_REPROMPT');
@@ -108,7 +105,8 @@ const languageStrings = {
             SKILL_NAME: 'Muscles one oh one',
             WELCOME_MESSAGE: 'Welcome to %s. I can tell you the origin, insertion, action, and nerve of various muscles ... Now, what can I help you with.',
             WELCOME_REPROMPT: 'For instructions on what you can say, please say help me.',
-            DISPLAY_CARD_TITLE: '%s  - Instructions for %s.',
+            RESPONSE_END: 'What else can I help you with?',
+            RESPONSE_REPROMPT: 'You can say repeat to hear the previous information, you can ask about another muscle, or you can say exit. Now, what can I help you with?',
             HELP_MESSAGE: 'You can ask questions such as, how do I tie a windsor knot, or, you can say exit ... Now, what can I help you with?',
             HELP_REPROMPT: 'You can say things like, how do I tie a windsor knot, or you can say exit ... Now, what can I help you with?',
             STOP_MESSAGE: 'Goodbye!',
@@ -116,11 +114,36 @@ const languageStrings = {
             RECIPE_HELP_REPROMPT: 'You can say main menu to choose another knot.',
             RECIPE_NOT_FOUND_MESSAGE: 'I\'m sorry, I currently do not know ',
             RECIPE_NOT_FOUND_WITH_ITEM_NAME: 'the instructions for %s. ',
-            RECIPE_NOT_FOUND_WITHOUT_ITEM_NAME: 'that knot. ',
-            RECIPE_NOT_FOUND_REPROMPT: 'What else can I help with?'
+            RECIPE_NOT_FOUND_WITHOUT_ITEM_NAME: 'that knot. '
         }
     }
 };
+
+function buildResponseString (array, muscleList) {
+    let fullString = '';
+
+    for (let i = 0; i < array.length; i++) {
+        let tag = array[i];
+        let muscleInfo = muscleList[itemName][tag];
+        let tagString = 'The ';
+        if (muscleInfo.length == 1) {
+            tagString += tag + ' of ' + itemName + ' is: ' + muscleInfo[0] + '. ';
+        } else {
+            tag += 's';
+            tagString += tag + ' of ' + itemName + ' are: ';
+            for (let i = 0; i < muscleInfo.length; i++) {
+                if (i == muscleInfo.length - 1) {
+                    tagString += 'and ' + muscleInfo[i] + '. ';
+                } else {
+                    tagString += muscleInfo[i] + ', ';
+                }
+            }
+        }
+        fullString += tagString;
+    }
+
+    return fullString;
+}
 
 exports.handler = (event, context) => {
     const alexa = Alexa.handler(event, context);

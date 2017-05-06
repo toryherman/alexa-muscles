@@ -1,4 +1,6 @@
-module.export = {
+/* eslint-disable  func-names */
+/* eslint quote-props: ["error", "consistent"]*/
+module.exports = {
   MUSCLES: {
     'abductor digiti minimi of the foot': { // hand or foot?
       'origin': ['medial and lateral process of posterior calcaneal tuberosity'],
@@ -1291,4 +1293,4 @@ module.export = {
       'nerve': ['buccal branch of facial nerve (7)']
     }
   }
-}
+};
