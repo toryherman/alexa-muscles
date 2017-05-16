@@ -67,3 +67,7 @@ NerveIntent what are the nerves of {Item}
 NerveIntent what are the nerves of the {Item}
 NerveIntent what nerve innervates {Item}
 NerveIntent what nerve innervates the {Item}
+NerveIntent what innervates {Item}
+NerveIntent what innervates the {Item}
+NerveIntent what is the innervation of {Item}
+NerveIntent what is the innervation of the {Item}
