@@ -1165,7 +1165,7 @@ module.exports = {
       'nerve': ['tibial portion of sciatic nerve (L5, S1)']
     },
     'semitendinosus': {
-      'name': '<phoneme alphabet="ipa" ph="sɛ.mi.tɛn.dɪ.noʊ.sɪs">semitendinosus</phoneme>',
+      'name': '<phoneme alphabet="ipa" ph="sɛ.mi.tɛn.dɪˈnoʊ.sɪs">semitendinosus</phoneme>',
 			'origin': ['upper inner quadrant of posterior surface of <phoneme alphabet="ipa" ph="ˈɪs.kil">ischial</phoneme> tuberosity'],
       'insertion': ['upper medial shaft of tibia'],
       'action': ['flexes and medially rotates knee', 'extends hip'],

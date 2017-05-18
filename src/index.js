@@ -10,6 +10,7 @@
 
 'use strict';
 
+const ua = require('universal-analytics');
 const Alexa = require('alexa-sdk');
 const muscles = require('./muscles');
 
@@ -26,6 +27,7 @@ const handlers = {
       this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech);
   },
   'GetMuscle': function () {
+      console.log(JSON.stringify(this.event));
       intentArray = [];
       const myMuscles = this.t('MUSCLES');
 
@@ -48,10 +50,18 @@ const handlers = {
           itemName = itemSlot.value.toLowerCase();
       }
 
-      let response = buildResponseString(intentArray, myMuscles);
-      this.attributes.speechOutput = response + this.t('RESPONSE_END');
-      this.attributes.repromptSpeech = this.t('RESPONSE_REPROMPT');
-      this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech);
+      if (myMuscles[itemName]) {
+          let response = buildResponseString(intentArray, myMuscles);
+          this.attributes.speechOutput = response + this.t('RESPONSE_END');
+          this.attributes.repromptSpeech = this.t('RESPONSE_REPROMPT');
+          this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech);
+      } else {
+          this.emit('Unhandled');
+      }
+
+      // Google Analytics
+      let intentTrackingID = ua('UA-87314233-4');
+      intentTrackingID.event(intent, itemSlot.value).send();
   },
   'MuscleIntent': function () {
       this.emit('GetMuscle');
@@ -119,8 +129,9 @@ const languageStrings = {
             HELP_REPROMPT: 'You can say things like, what is the origin of biceps femoris, or you can say exit ... Now, what can I help you with?',
             STOP_MESSAGE: 'Goodbye!',
             MUSCLE_NOT_FOUND_MESSAGE: 'I\'m sorry, I currently do not know ',
-            MUSCLE_NOT_FOUND_WITH_ITEM_NAME: 'the muscle %. ',
-            MUSCLE_NOT_FOUND_WITHOUT_ITEM_NAME: 'that muscle. '
+            MUSCLE_NOT_FOUND_WITH_ITEM_NAME: 'the muscle %s. ',
+            MUSCLE_NOT_FOUND_WITHOUT_ITEM_NAME: 'that muscle. ',
+            MUSCLE_NOT_FOUND_REPROMPT: 'What else can I help with?'
         }
     }
 };
@@ -131,16 +142,16 @@ function buildResponseString (array, muscleList) {
     for (let i = 0; i < array.length; i++) {
         let tag = array[i];
         let muscleInfo = muscleList[itemName][tag];
-        let muscleName = muscleList[itemName][name];
+        let muscleName = muscleList[itemName]['name'];
         let tagString = 'The ';
         if (muscleInfo.length == 1) {
-            tagString += tag + ' of ' + muscleName + ' is... ' + muscleInfo[0] + '. ';
+            tagString += tag + ' of ' + muscleName + ' is... <prosody rate="90%">' + muscleInfo[0] + '.</prosody> ';
         } else {
             tag += 's';
-            tagString += tag + ' of ' + muscleName + ' are... ';
+            tagString += tag + ' of ' + muscleName + ' are... <prosody rate="90%">';
             for (let i = 0; i < muscleInfo.length; i++) {
                 if (i == muscleInfo.length - 1) {
-                    tagString += 'and ' + muscleInfo[i] + '. ';
+                    tagString += 'and ' + muscleInfo[i] + '.</prosody> ';
                 } else {
                     tagString += muscleInfo[i] + '... ';
                 }
