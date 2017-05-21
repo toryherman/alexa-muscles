@@ -51,17 +51,21 @@ const handlers = {
       }
 
       if (myMuscles[itemName]) {
+          let label = 'success';
+          let intentTrackingID = ua('UA-87314233-4');
+          intentTrackingID.event(intent, itemSlot.value, label, 1).send();
+
           let response = buildResponseString(intentArray, myMuscles);
           this.attributes.speechOutput = response + this.t('RESPONSE_END');
           this.attributes.repromptSpeech = this.t('RESPONSE_REPROMPT');
           this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech);
       } else {
+          let label = 'unhandled';
+          let intentTrackingID = ua('UA-87314233-4');
+          intentTrackingID.event(intent, itemSlot.value, label, 0).send();
+
           this.emit('Unhandled');
       }
-
-      // Google Analytics
-      let intentTrackingID = ua('UA-87314233-4');
-      intentTrackingID.event(intent, itemSlot.value).send();
   },
   'MuscleIntent': function () {
       this.emit('GetMuscle');
@@ -121,16 +125,16 @@ const languageStrings = {
         translation: {
             MUSCLES: muscles.MUSCLES,
             SKILL_NAME: 'Muscles one oh one',
-            WELCOME_MESSAGE: 'Welcome to %s. I can tell you the origin, insertion, action, and nerve of various muscles ... Now, what can I help you with.',
+            WELCOME_MESSAGE: 'Welcome to %s. I <phoneme alphabet="ipa" ph="kɛn">can</phoneme> tell you the origin, insertion, action, and nerve of various muscles ... Now, what can I help you with.',
             WELCOME_REPROMPT: 'For instructions on what you can say, please say help me.',
             RESPONSE_END: 'What else can I help you with?',
             RESPONSE_REPROMPT: 'You can say repeat to hear the previous information, you can ask about another muscle, or you can say exit. Now, what can I help you with?',
             HELP_MESSAGE: 'You can ask for the origin, insertion, action, or nerve or a muscle, or, you can say exit ... Now, what can I help you with?',
             HELP_REPROMPT: 'You can say things like, what is the origin of biceps femoris, or you can say exit ... Now, what can I help you with?',
             STOP_MESSAGE: 'Goodbye!',
-            MUSCLE_NOT_FOUND_MESSAGE: 'I\'m sorry, I currently do not know ',
-            MUSCLE_NOT_FOUND_WITH_ITEM_NAME: 'the muscle %s. ',
-            MUSCLE_NOT_FOUND_WITHOUT_ITEM_NAME: 'that muscle. ',
+            MUSCLE_NOT_FOUND_MESSAGE: 'I\'m sorry, ',
+            MUSCLE_NOT_FOUND_WITH_ITEM_NAME: 'I currently do not know the muscle %s. ',
+            MUSCLE_NOT_FOUND_WITHOUT_ITEM_NAME: 'please specify a muscle. ',
             MUSCLE_NOT_FOUND_REPROMPT: 'What else can I help with?'
         }
     }

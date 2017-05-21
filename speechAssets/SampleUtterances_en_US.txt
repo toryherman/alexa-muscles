@@ -5,6 +5,13 @@ MuscleIntent give me a summary of {Item}
 MuscleIntent give me a summary of the {Item}
 MuscleIntent tell me about {Item}
 MuscleIntent tell me about the {Item}
+MuscleIntent {Item} muscle
+MuscleIntent summarize {Item} muscle
+MuscleIntent summarize the {Item} muscle
+MuscleIntent give me a summary of {Item} muscle
+MuscleIntent give me a summary of the {Item} muscle
+MuscleIntent tell me about {Item} muscle
+MuscleIntent tell me about the {Item} muscle
 
 OriginIntent {Item} origin
 OriginIntent origin of {Item}
@@ -17,6 +24,19 @@ OriginIntent what origin of {Item} is
 OriginIntent what is {Item} origin
 OriginIntent what is the origin of {Item}
 OriginIntent what is the origin of the {Item}
+OriginIntent whats the origin of {Item}
+OriginIntent {Item} muscle origin
+OriginIntent origin of {Item} muscle
+OriginIntent origin of {Item} muscle is
+OriginIntent tell me {Item} muscle origin
+OriginIntent tell me the {Item} muscle origin
+OriginIntent tell me the origin of {Item} muscle
+OriginIntent tell me the origin of the {Item} muscle
+OriginIntent what origin of {Item} muscle is
+OriginIntent what is {Item} muscle origin
+OriginIntent what is the origin of {Item} muscle
+OriginIntent what is the origin of the {Item} muscle
+OriginIntent whats the origin of {Item} muscle
 
 InsertionIntent {Item} insertion
 InsertionIntent insertion of {Item}
@@ -27,6 +47,17 @@ InsertionIntent tell me the insertion of the {Item}
 InsertionIntent what is {Item} insertion
 InsertionIntent what is the insertion of {Item}
 InsertionIntent what is the insertion of the {Item}
+InsertionIntent whats the insertion of {Item}
+InsertionIntent {Item} muscle insertion
+InsertionIntent insertion of {Item} muscle
+InsertionIntent tell me {Item} muscle insertion
+InsertionIntent tell me the {Item} muscle insertion
+InsertionIntent tell me the insertion of {Item} muscle
+InsertionIntent tell me the insertion of the {Item} muscle
+InsertionIntent what is {Item} muscle insertion
+InsertionIntent what is the insertion of {Item} muscle
+InsertionIntent what is the insertion of the {Item} muscle
+InsertionIntent whats the insertion of {Item} muscle
 
 ActionIntent {Item} action
 ActionIntent {Item} actions
@@ -45,13 +76,38 @@ ActionIntent what is the action of {Item}
 ActionIntent what is the action of the {Item}
 ActionIntent what are the actions of {Item}
 ActionIntent what are the actions of the {Item}
+ActionIntent whats the action of {Item}
+ActionIntent {Item} muscle action
+ActionIntent {Item} muscle actions
+ActionIntent action of {Item} muscle
+ActionIntent actions of {Item} muscle
+ActionIntent tell me {Item} muscle action
+ActionIntent tell me {Item} muscle actions
+ActionIntent tell me the {Item} muscle action
+ActionIntent tell me the {Item} muscle actions
+ActionIntent tell me the action of {Item} muscle
+ActionIntent tell me the actions of {Item} muscle
+ActionIntent tell me the action of the {Item} muscle
+ActionIntent tell me the actions of the {Item} muscle
+ActionIntent what is {Item} muscle action
+ActionIntent what is the action of {Item} muscle
+ActionIntent what is the action of the {Item} muscle
+ActionIntent what are the actions of {Item} muscle
+ActionIntent what are the actions of the {Item} muscle
+ActionIntent whats the action of {Item} muscle
 
 NerveIntent {Item} nerve
 NerveIntent {Item} nerves
+NerveIntent {Item} innervation
+NerveIntent {Item} innervations
 NerveIntent nerve of {Item}
 NerveIntent nerve of the {Item}
 NerveIntent nerves of {Item}
 NerveIntent nerves of the {Item}
+NerveIntent innervation of {Item}
+NerveIntent innervation of the {Item}
+NerveIntent innervations of {Item}
+NerveIntent innervations of the {Item}
 NerveIntent tell me {Item} nerve
 NerveIntent tell me {Item} nerves
 NerveIntent tell me the {Item} nerve
@@ -71,3 +127,38 @@ NerveIntent what innervates {Item}
 NerveIntent what innervates the {Item}
 NerveIntent what is the innervation of {Item}
 NerveIntent what is the innervation of the {Item}
+NerveIntent whats the nerve of {Item}
+NerveIntent whats the innervation of {Item}
+NerveIntent {Item} muscle nerve
+NerveIntent {Item} muscle nerves
+NerveIntent {Item} muscle innervation
+NerveIntent {Item} muscle innervations
+NerveIntent nerve of {Item} muscle
+NerveIntent nerve of the {Item} muscle
+NerveIntent nerves of {Item} muscle
+NerveIntent nerves of the {Item} muscle
+NerveIntent innervation of {Item} muscle
+NerveIntent innervation of the {Item} muscle
+NerveIntent innervations of {Item} muscle
+NerveIntent innervations of the {Item} muscle
+NerveIntent tell me {Item} muscle nerve
+NerveIntent tell me {Item} muscle nerves
+NerveIntent tell me the {Item} muscle nerve
+NerveIntent tell me the {Item} muscle nerves
+NerveIntent tell me the nerve of {Item} muscle
+NerveIntent tell me the nerves of {Item} muscle
+NerveIntent tell me the nerve of the {Item} muscle
+NerveIntent tell me the nerves of the {Item} muscle
+NerveIntent what is {Item} muscle nerve
+NerveIntent what is the nerve of {Item} muscle
+NerveIntent what is the nerve of the {Item} muscle
+NerveIntent what are the nerves of {Item} muscle
+NerveIntent what are the nerves of the {Item} muscle
+NerveIntent what nerve innervates {Item} muscle
+NerveIntent what nerve innervates the {Item} muscle
+NerveIntent what innervates {Item} muscle
+NerveIntent what innervates the {Item} muscle
+NerveIntent what is the innervation of {Item} muscle
+NerveIntent what is the innervation of the {Item} muscle
+NerveIntent whats the nerve of {Item} muscle
+NerveIntent whats the innervation of {Item} muscle
