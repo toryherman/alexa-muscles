@@ -13,11 +13,12 @@
 const ua = require('universal-analytics');
 const Alexa = require('alexa-sdk');
 const muscles = require('./muscles');
+const muscles_text = require('./muscles_text');
 
 const APP_ID = 'amzn1.ask.skill.26ff3d01-156a-4949-9503-6559d43fac38';
 
 const intentOptions = ['origin', 'insertion', 'action', 'nerve'];
-let itemName;
+let itemName = '';
 let intentArray;
 
 const handlers = {
@@ -30,6 +31,7 @@ const handlers = {
       console.log(JSON.stringify(this.event));
       intentArray = [];
       const myMuscles = this.t('MUSCLES');
+      const myMuscles_text = this.t('MUSCLES_TEXT');
 
       let itemSlot = this.event.request.intent.slots.Item;
       let intent = this.event.request.intent.name;
@@ -56,9 +58,11 @@ const handlers = {
           intentTrackingID.event(intent, itemSlot.value, label, 1).send();
 
           let response = buildResponseString(intentArray, myMuscles);
+          let cardTitle = capString(itemName);
+          let cardContent = buildCardString(intentArray, myMuscles_text);
           this.attributes.speechOutput = response + this.t('RESPONSE_END');
           this.attributes.repromptSpeech = this.t('RESPONSE_REPROMPT');
-          this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech);
+          this.emit(':askWithCard', this.attributes.speechOutput, this.attributes.repromptSpeech, cardTitle, cardContent);
       } else {
           let label = 'unhandled';
           let intentTrackingID = ua('UA-87314233-4');
@@ -124,6 +128,7 @@ const languageStrings = {
     'en-US': {
         translation: {
             MUSCLES: muscles.MUSCLES,
+            MUSCLES_TEXT: muscles_text.MUSCLES_TEXT,
             SKILL_NAME: 'Muscles one oh one',
             WELCOME_MESSAGE: 'Welcome to %s. I <phoneme alphabet="ipa" ph="kɛn">can</phoneme> tell you the origin, insertion, action, and nerve of various muscles ... Now, what can I help you with.',
             WELCOME_REPROMPT: 'For instructions on what you can say, please say help me.',
@@ -147,17 +152,18 @@ function buildResponseString (array, muscleList) {
         let tag = array[i];
         let muscleInfo = muscleList[itemName][tag];
         let muscleName = muscleList[itemName]['name'];
-        let tagString = 'The ';
+        let tagString = '<prosody rate="82%">The ';
+
         if (muscleInfo.length == 1) {
-            tagString += tag + ' of ' + muscleName + ' is... <prosody rate="90%">' + muscleInfo[0] + '.</prosody> ';
+            tagString += tag + ' of ' + muscleName + ' is... ' + muscleInfo[0] + '.</prosody> ';
         } else {
             tag += 's';
-            tagString += tag + ' of ' + muscleName + ' are... <prosody rate="90%">';
-            for (let i = 0; i < muscleInfo.length; i++) {
-                if (i == muscleInfo.length - 1) {
-                    tagString += 'and ' + muscleInfo[i] + '.</prosody> ';
+            tagString += tag + ' of ' + muscleName + ' are... ';
+            for (let j = 0; j < muscleInfo.length; j++) {
+                if (j == muscleInfo.length - 1) {
+                    tagString += 'and ' + muscleInfo[j] + '.</prosody> ';
                 } else {
-                    tagString += muscleInfo[i] + '... ';
+                    tagString += muscleInfo[j] + '... ';
                 }
             }
         }
@@ -165,6 +171,37 @@ function buildResponseString (array, muscleList) {
     }
 
     return fullString;
+}
+
+function buildCardString (array, muscleList) {
+    let fullString = '';
+
+    for (let i = 0; i < array.length; i++) {
+        let tag = array[i];
+        let muscleInfo = muscleList[itemName][tag];
+        let muscleName = muscleList[itemName]['name'];
+        let tagString = '';
+
+        if (muscleInfo.length == 1) {
+            tagString += tag + ': ' + muscleInfo[0] + '.\n\n';
+        } else {
+            tagString += tag + ': ';
+            for (let j = 0; j < muscleInfo.length; j++) {
+                if (j == muscleInfo.length - 1) {
+                    tagString += muscleInfo[j] + '.\n\n';
+                } else {
+                    tagString += muscleInfo[j] + ', ';
+                }
+            }
+        }
+        fullString += capString(tagString);
+    }
+
+    return fullString;
+}
+
+function capString(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 exports.handler = (event, context) => {

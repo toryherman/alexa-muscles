@@ -1,8 +1,8 @@
 /* eslint-disable  func-names */
 /* eslint quote-props: ["error", "consistent"]*/
 module.exports = {
-  MUSCLES: {
-    'abductor digiti minimi of the foot': { // hand or foot?
+  MUSCLES_TEXT: {
+    'abductor digiti minimi of the foot': {
       'name': 'abductor digiti minimi of the foot',
       'origin': ['medial and lateral process of posterior calcaneal tuberosity'],
       'insertion': ['lateral side of base of proximal phalanx of the fifth toe and fifth metatarsal'],
@@ -23,9 +23,9 @@ module.exports = {
       'action': ['flexes and abducts big toe', 'supports medial longitudinal arch'],
       'nerve': ['medial plantar nerve (S1, 2)']
     },
-    'abductor pollicis brevis': { // did you mean brevis?
+    'abductor pollicis brevis': {
       'name': 'abductor pollicis brevis',
-      'origin': ['<phoneme alphabet="ipa" ph="ˈtu.bɚ.kəl">tubercle</phoneme> of scaphoid', 'flexor retinaculum'],
+      'origin': ['tubercle of scaphoid', 'flexor retinaculum'],
       'insertion': ['radial sesamoid of proximal phalanx of thumb', 'tendor of extensor pollicis longus'],
       'action': ['abducts thumb at metacarpophalangeal and carpometacarpal joints'],
       'nerve': ['recurrent branch of median nerve (C8, T1)']
@@ -33,61 +33,61 @@ module.exports = {
     'abductor pollicis longus': {
       'name': 'abductor pollicis longus',
       'origin': ['upper posterior surface of ulna', 'middle third of posterior surface of radius', 'interosseous membrane'],
-      'insertion': ['over tendons of radial extensors and <phoneme alphabet="ipa" ph="breɪ.ki.oʊ.reɪ.di.æl.ɪs">brachioradialis</phoneme> to base of first metacarpal and trapezium'],
+      'insertion': ['over tendons of radial extensors and brachioradialis to base of first metacarpal and trapezium'],
       'action': ['abducts and extends thumb at carpometacarpal joint'],
       'nerve': ['posterior interosseous nerve (C6, 7)']
     },
     'adductor brevis': {
-      'name': '<phoneme alphabet="ipa" ph="ˈæˌdʌk.tɚ">adductor</phoneme> brevis',
-      'origin': ['inferior ramus of body of <phoneme alphabet="ipa" ph="pju.bɪs">pubis</phoneme>'],
+      'name': 'adductor brevis',
+      'origin': ['inferior ramus of body of pubis'],
       'insertion': ['upper third of linea aspera'],
       'action': ['adducts hip'],
-      'nerve': ['anterior division of <phoneme alphabet="ipa" ph="ɑb.tu.reɪ.tɚ">obturator</phoneme> nerve (L2, 3)']
+      'nerve': ['anterior division of obturator nerve (L2, 3)']
     },
     'adductor hallucis': {
-      'name': '<phoneme alphabet="ipa" ph="ˈæˌdʌk.tɚ">adductor</phoneme> hallucis',
-      'origin': ['for oblique head: base of 2, 3, and 4 metatarsals', 'for transverse head: plantar metatarsal ligaments and deep transverse ligament'],
+      'name': 'adductor hallucis',
+      'origin': ['oblique head: base of 2, 3, and 4 metatarsals', 'transverse head: plantar metatarsal ligaments and deep transverse ligament'],
       'insertion': ['lateral side of base of proximal phalanx of big toe', 'lateral sesamoid'],
       'action': ['adducts and flexes metatarsophalangeal joint of big toe', 'supports transverse arch'],
       'nerve': ['deep branch of lateral plantar nerve (S2, 3)']
     },
     'adductor longus': {
-      'name': '<phoneme alphabet="ipa" ph="ˈæˌdʌk.tɚ">adductor</phoneme> longus',
-      'origin': ['body of <phoneme alphabet="ipa" ph="pju.bɪs">pubis</phoneme> inferior and medial to <phoneme alphabet="ipa" ph="pju.bɪk">pubic</phoneme> <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəl">tubercle</phoneme>'],
+      'name': 'adductor longus',
+      'origin': ['body of pubis inferior and medial to pubic tubercle'],
       'insertion': ['lower two thirds of medial linea aspera'],
       'action': ['adducts and medially rotates hip'],
-      'nerve': ['anterior division of <phoneme alphabet="ipa" ph="ɑb.tu.reɪ.tɚ">obturator</phoneme> nerve (L2, 3)']
+      'nerve': ['anterior division of obturator nerve (L2, 3)']
     },
     'adductor magnus': {
-      'name': '<phoneme alphabet="ipa" ph="ˈæˌdʌk.tɚ">adductor</phoneme> magnus',
-      'origin': ['<phoneme alphabet="ipa" ph="ˈæˌdʌk.tɚ">adductor</phoneme> portion: <phoneme alphabet="ipa" ph="ˈɪsˌkioʊ.pjubɪk">ischiopubic</phoneme> ramus', 'hamstring portion: lower outer quadrant of posterior surface of <phoneme alphabet="ipa" ph="ˈɪs.kil">ischial</phoneme> tuberosity'],
-      'insertion': ['<phoneme alphabet="ipa" ph="ˈæˌdʌk.tɚ">adductor</phoneme> portion: lower gluteal line and linea aspera', 'hamstring portion: <phoneme alphabet="ipa" ph="ˈæˌdʌk.tɚ">adductor</phoneme> <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəl">tubercle</phoneme>'],
-      'action': ['<phoneme alphabet="ipa" ph="ˈæˌdʌk.tɚ">adductor</phoneme> portion: adducts and medially rotates hip', 'hamstring portion: extends hip'],
-      'nerve': ['<phoneme alphabet="ipa" ph="ˈæˌdʌk.tɚ">adductor</phoneme> portion: posterior division of <phoneme alphabet="ipa" ph="ɑb.tu.reɪ.tɚ">obturator</phoneme> nerve (L2 through 4)', 'hamstring portion: tibial portion of sciatic (L4 through S3)']
+      'name': 'adductor magnus',
+      'origin': ['adductor portion: ischiopubic ramus', 'hamstring portion: lower outer quadrant of posterior surface of ischial tuberosity'],
+      'insertion': ['adductor portion: lower gluteal line and linea aspera', 'hamstring portion: adductor tubercle'],
+      'action': ['adductor portion: adducts and medially rotates hip', 'hamstring portion: extends hip'],
+      'nerve': ['adductor portion: posterior division of obturator nerve (L2 through 4)', 'hamstring portion: tibial portion of sciatic (L4 through S3)']
     },
     'adductor pollicis': {
-      'name': '<phoneme alphabet="ipa" ph="ˈæˌdʌk.tɚ">adductor</phoneme> pollicis',
-      'origin': ['for oblique head: base of second and third metacarpals, trapezoid, and capitate', 'for transverse head: palmar border and shaft of third metacarpal'],
+      'name': 'adductor pollicis',
+      'origin': ['oblique head: base of second and third metacarpals, trapezoid, and capitate', 'transverse head: palmar border and shaft of third metacarpal'],
       'insertion': ['ulnar sesamoid', 'ulnar side of base of proximal phalanx', 'tendon of extensor pollicis longus'],
       'action': ['adducts carpometacarpal joint of thumb'],
       'nerve': ['deep branch of ulnar nerve (T1)']
     },
     'anconeus': {
       'name': 'anconeus',
-      'origin': ['smooth surface of lower extremity of posterior aspect of lateral <phoneme alphabet="ipa" ph="ɛpɪkɑndaɪl">epicondyle</phoneme> of humerus'],
-      'insertion': ['lateral side of <phoneme alphabet="ipa" ph="əˈlɛk.rə.nɑn">olecranon</phoneme>'],
+      'origin': ['smooth surface of lower extremity of posterior aspect of lateral epicondyle of humerus'],
+      'insertion': ['lateral side of olecranon'],
       'action': ['weakly extends elbow', 'abducts ulna in pronation'],
       'nerve': ['radial nerve (C7, 8)']
     },
     'articularis cubiti': {
-      'name': '<phoneme alphabet="ipa" ph="ɑrˈtɪk.ju.leɪr.ɪs">articularis</phoneme> cubiti',
+      'name': 'articularis cubiti',
       'origin': ['deep distal surface of medial head of triceps'],
       'insertion': ['posterior capsule of elbow joint'],
       'action': ['lifts capsule away from joint'],
       'nerve': ['radial nerve (C6, 7, 8)']
     },
     'articularis genu': {
-      'name': '<phoneme alphabet="ipa" ph="ɑrˈtɪk.ju.leɪr.ɪs">articularis</phoneme> genu',
+      'name': 'articularis genu',
       'origin': ['two slips from anterior femur below vastus intermedialius'],
       'insertion': ['apex of suprastellar bursa'],
       'action': ['retracts bursa as knee extends'],
@@ -95,83 +95,83 @@ module.exports = {
     },
     'aryepiglotticus': {
       'name': 'aryepiglotticus',
-      'origin': ['apex of <phoneme alphabet="ipa" ph="əˈrɪt.ɪn.ɔɪd">arytenoid</phoneme> cartilage'],
+      'origin': ['apex of arytenoid cartilage'],
       'insertion': ['lateral border of epiglottis'],
       'action': ['aids closure of additus of larynx'],
       'nerve': ['recurrent laryngeal branch of vagus nerve (X)']
     },
     'auricularis': {
-      'name': '<phoneme alphabet="ipa" ph="ɔr.ɪk.ju.leɪr.ɪs">auricularis</phoneme>',
+      'name': 'auricularis',
       'origin': ['cartilage of auricle'],
-      'insertion': ['galeal <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme>'],
+      'insertion': ['galeal aponeurosis'],
       'action': ['adjusts position of ear'],
-      'nerve': ['temporal branch of facial nerve (7)']
+      'nerve': ['temporal branch of facial nerve (VII)']
     },
     'biceps brachii': {
       'name': 'biceps brachii',
-      'origin': ['for long head: <phoneme alphabet="ipa" ph="suˈpræ.glə.nɔɪd">supraglenoid</phoneme> <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəl">tubercle</phoneme> of scapula', 'for short head: coracoid process of scapula with <phoneme alphabet="ipa" ph="ˌkoʊ.rɪ.koʊ.breɪ.ki.æl.ɪs">coracobrachialis</phoneme>'],
-      'insertion': ['posterior border of bicipital tuberosity of radius', 'bicipital <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme> to deep fascia and subcutaneous ulna'],
+      'origin': ['long head: supraglenoid tubercle of scapula', 'short head: coracoid process of scapula with coracobrachialis'],
+      'insertion': ['posterior border of bicipital tuberosity of radius', 'bicipital aponeurosis to deep fascia and subcutaneous ulna'],
       'action': ['supinates forearm', 'flexes elbow', 'weakly flexes shoulder'],
       'nerve': ['musculocutaneous nerve (C5, 6)']
     },
     'biceps femoris': {
-      'name': 'biceps <phoneme alphabet="ipa" ph="fɛˈmoʊr.ɪs">femoris</phoneme>',
-      'origin': ['for long head: upper inner quadrant of posterior surface of <phoneme alphabet="ipa" ph="ˈɪs.kil">ischial</phoneme> tuberosity', 'for short head: middle third of linea aspear, lateral <phoneme alphabet="ipa" ph="su.prə.kɑn.dɪ.lɑr">supracondylar</phoneme> ridge of femur'],
-      'insertion': ['styloid process of head of fibula', 'lateral collateral ligament', 'lateral tibial <phoneme alphabet="ipa" ph="kɑndaɪl">condyle</phoneme>'],
+      'name': 'biceps femoris',
+      'origin': ['long head: upper inner quadrant of posterior surface of ischial tuberosity', 'short head: middle third of linea aspear, lateral supracondylar ridge of femur'],
+      'insertion': ['styloid process of head of fibula', 'lateral collateral ligament', 'lateral tibial condyle'],
       'action': ['flexes and laterally rotates knee', 'long head: extends hip'],
-      'nerve': ['for long head: tibial portion of sciatic nerve', 'for short head: common peroneal portion of sciatic nerve (L5 S1)']
+      'nerve': ['long head: tibial portion of sciatic nerve', 'short head: common peroneal portion of sciatic nerve (L5, S1)']
     },
     'brachialis': {
-      'name': '<phoneme alphabet="ipa" ph="breɪ.ki.æl.ɪs">brachialis</phoneme>',
+      'name': 'brachialis',
       'origin': ['anterior lower half of humerus', 'medial and lateral intermuscular septa'],
       'insertion': ['coronoid process and tuberosity of ulna'],
       'action': ['flexes elbow'],
       'nerve': ['musculocutaneous nerve (C5, 6)', 'radial nerve (C7)']
     },
     'brachioradialis': {
-      'name': '<phoneme alphabet="ipa" ph="breɪ.ki.oʊ.reɪ.di.æl.ɪs">brachioradialis</phoneme>',
-      'origin': ['upper two thirds of lateral <phoneme alphabet="ipa" ph="su.prə.kɑn.dɪ.lɑr">supracondylar</phoneme> ridge of humerus', 'lateral intermuscular septum'],
+      'name': 'brachioradialis',
+      'origin': ['upper two thirds of lateral supracondylar ridge of humerus', 'lateral intermuscular septum'],
       'insertion': ['base of styloid process of radius'],
       'action': ['flexes arm at elbow', 'brings forearm into midprone position'],
       'nerve': ['radial nerve (C5, 6)']
     },
     'buccinator': {
-      'name': '<phoneme alphabet="ipa" ph="ˈbʌk.sɪn.eɪ.dɚ">buccinator</phoneme>',
-      'origin': ['external alveolar margins of maxilla and mandible by molar teeth, to maxillary <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəl">tubercle</phoneme> and pterygoid hamulus and posterior mylohyoid line respectively, then via pterygomandibular <phoneme alphabet="ipa" ph="reɪ.fi">raphe</phoneme> between bones'],
+      'name': 'buccinator',
+      'origin': ['external alveolar margins of maxilla and mandible by molar teeth, to maxillary tubercle and pterygoid hamulus and posterior mylohyoid line respectively, then via pterygomandibular raphe between bones'],
       'insertion': ['decussates at modiolus of mouth and interdigitates with opposite side'],
       'action': ['aids mastication', 'tenses cheeks in blowing and whistling', 'aids closure of mouth'],
-      'nerve': ['buccal branch of facial nerve (7)']
+      'nerve': ['buccal branch of facial nerve (VII)']
     },
     'bulbospongiosus': {
-      'name': '<phoneme alphabet="ipa" ph="bʌl.boʊ.spʌn.d͡ʒiˈoʊ.sɪs">bulbospongiosus</phoneme>',
-      'origin': ['perineal body', 'midline <phoneme alphabet="ipa" ph="reɪ.fi">raphe</phoneme> over corpus spongiosum in male'],
-      'insertion': ['superficial perineal membrane', 'dorsal penile or clitoral <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme>'],
+      'name': 'bulbospongiosus',
+      'origin': ['perineal body', 'midline raphe over corpus spongiosum in male'],
+      'insertion': ['superficial perineal membrane', 'dorsal penile or clitoral aponeurosis'],
       'action': ['male: aids emptying of urine and ejaculate from urethra', 'female: closes vaginal introitus'],
       'nerve': ['perineal branch of pudendal nerve (S2, 3, 4)']
     },
-    'constrictor of pharynx inferior': { // or inferior constrictor
+    'constrictor of pharynx inferior': {
       'name': 'constrictor of pharynx inferior',
-      'origin': ['cricopharyngeus: lateral aspect of arch of <phoneme alphabet="ipa" ph="kraɪ.kɔɪd">cricoid</phoneme> cartilage', 'thyropharyngeus: oblique line of laminar of thyroid cartilage and fibrous cricothyroid arch'],
-      'insertion': ['cricopharyngeus: continuous with muscle of opposite side, behind pharynx', 'thyropharyngeus: lower pharyngeal <phoneme alphabet="ipa" ph="reɪ.fi">raphe</phoneme>'],
+      'origin': ['cricopharyngeus: lateral aspect of arch of cricoid cartilage', 'thyropharyngeus: oblique line of laminar of thyroid cartilage and fibrous cricothyroid arch'],
+      'insertion': ['cricopharyngeus: continuous with muscle of opposite side, behind pharynx', 'thyropharyngeus: lower pharyngeal raphe'],
       'action': ['aids swallowing', 'cricopharyngeus acts as upper esophageal sphincter'],
-      'nerve': ['pharyngeal plexus (9, 10, and sympathetic) via pharyngeal branch of 10 with its motor fibers from cranial accessory nerve (11)']
+      'nerve': ['pharyngeal plexus (9, 10, and sympathetic) via pharyngeal branch of 10 with its motor fibers from cranial accessory nerve (XI)']
     },
-    'constrictor of pharynx middle': { // or middle constrictor
+    'constrictor of pharynx middle': {
       'name': 'constrictor of pharynx middle',
       'origin': ['lower third of stylohyoid ligament', 'lesser cornu and superior border of greater cornu of hyoid bone'],
-      'insertion': ['middle portion of pharyngeal <phoneme alphabet="ipa" ph="reɪ.fi">raphe</phoneme>'],
+      'insertion': ['middle portion of pharyngeal raphe'],
       'action': ['aids swallowing'],
-      'nerve': ['pharyngeal plexus (9, 10, and sympathetic), via pharyngeal branch of 10 with its motor fibers from cranial accessory nerve (11)']
+      'nerve': ['pharyngeal plexus (9, 10, and sympathetic), via pharyngeal branch of 10 with its motor fibers from cranial accessory nerve (XI)']
     },
-    'constrictor of pharynx superior': { // or superior constrictor
+    'constrictor of pharynx superior': {
       'name': 'constrictor of pharynx superior',
-      'origin': ['lower two thirds of medial pterygoid plate', 'pterygomandibular <phoneme alphabet="ipa" ph="reɪ.fi">raphe</phoneme> and posterior end of mylohyoid line on mandible'],
-      'insertion': ['upper midline pharyngeal <phoneme alphabet="ipa" ph="reɪ.fi">raphe</phoneme> and pharyngeal <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəl">tubercle</phoneme> of clivus of occiput'],
+      'origin': ['lower two thirds of medial pterygoid plate', 'pterygomandibular raphe and posterior end of mylohyoid line on mandible'],
+      'insertion': ['upper midline pharyngeal raphe and pharyngeal tubercle of clivus of occiput'],
       'action': ['aids swallowing'],
-      'nerve': ['pharyngeal plexus (9, 10, and sympathetic) via pharyngeal branch of 10 with its motor fibers from cranial accessory nerve (11)']
+      'nerve': ['pharyngeal plexus (9, 10, and sympathetic) via pharyngeal branch of 10 with its motor fibers from cranial accessory nerve (XI)']
     },
     'coracobrachialis': {
-      'name': '<phoneme alphabet="ipa" ph="ˌkoʊ.rɪ.koʊ.breɪ.ki.æl.ɪs">coracobrachialis</phoneme>',
+      'name': 'coracobrachialis',
       'origin': ['coracoid process of scapula with biceps brachii'],
       'insertion': ['upper half of medial border of humerus'],
       'action': ['flexes and weakly adducts arm'],
@@ -182,21 +182,21 @@ module.exports = {
       'origin': ['medial superciliary arch'],
       'insertion': ['skin of medial forehead'],
       'action': ['wrinkles forehead'],
-      'nerve': ['temporal branch of facial nerve (7)']
+      'nerve': ['temporal branch of facial nerve (VII)']
     },
     'cremaster': {
       'name': 'cremaster',
       'origin': ['lower border of internal oblique', 'transversus abdominis in inguinal canal'],
-      'insertion': ['loops around spermatic cord and tunica vaginalis and some fibers return to attach to pubic <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəl">tubercle</phoneme>'],
+      'insertion': ['loops around spermatic cord and tunica vaginalis and some fibers return to attach to pubic tubercle'],
       'action': ['retract testis'],
       'nerve': ['genital branch (L2) of genitofemoral nerve (L1, 2)']
     },
     'cricothyroid': {
       'name': 'cricothyroid',
-      'origin': ['<phoneme alphabet="ipa" ph="ˈæn.te.ro">antero</phoneme> lateral aspect of <phoneme alphabet="ipa" ph="kraɪ.kɔɪd">cricoid</phoneme> cartilage'],
+      'origin': ['antero lateral aspect of cricoid cartilage'],
       'insertion': ['inferior cornu and lower laminar of thyroid cartilage'],
       'action': ['lengthens and tenses vocal cords by tilting thyroid cartilage forwards'],
-      'nerve': ['external branch of superiorlaryngeal branch of vagus nerve (10)']
+      'nerve': ['external branch of superiorlaryngeal branch of vagus nerve (X)']
     },
     'dartos': {
       'name': 'dartos',
@@ -206,15 +206,15 @@ module.exports = {
       'nerve': ['sympathetic fibers from genital branch (L2) of genitofemoral nerve (L1, 2)']
     },
     'deep transverse perinei': {
-      'name': 'deep transverse <phoneme alphabet="ipa" ph="pɚˈɪn.i.aɪ">perinei</phoneme>',
-      'origin': ['medial aspect of <phoneme alphabet="ipa" ph="ˈɪsˌkioʊ.pjubɪk">ischiopubic</phoneme> ramus', 'body of <phoneme alphabet="ipa" ph="ˈɪsˌkiʌm">ischium</phoneme>'],
-      'insertion': ['midline <phoneme alphabet="ipa" ph="reɪ.fi">raphe</phoneme> and perineal body'],
+      'name': 'deep transverse perinei',
+      'origin': ['medial aspect of ischiopubic ramus', 'body of ischium'],
+      'insertion': ['midline raphe and perineal body'],
       'action': ['fixes perineal body', 'supports pelvic viscera'],
       'nerve': ['perineal branch of pudendal nerve (S2, 3, 4)']
     },
     'deltoid': {
       'name': 'deltoid',
-      'origin': ['lateral third of clavicle', '<phoneme alphabet="ipa" ph="əˈkro.mi.ʌn">acromion</phoneme>', 'spine of scapula to deltoid <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəl">tubercle</phoneme>'],
+      'origin': ['lateral third of clavicle', 'acromion', 'spine of scapula to deltoid tubercle'],
       'insertion': ['middle of lateral surface of humerus (deltoid tuberosity)'],
       'action': ['abducts arm', 'anterior fibers flex and medially rotate', 'posterior fibers extend and lateral rotate'],
       'nerve': ['axillary nerve (C5, 6) from posterior cord']
@@ -224,18 +224,18 @@ module.exports = {
       'origin': ['outer surface of mandible posterior to oblique line'],
       'insertion': ['modiolus at angle of mouth'],
       'action': ['depresses and draws angle of mouth laterally'],
-      'nerve': ['mandibular branch of facial nerve (7)']
+      'nerve': ['mandibular branch of facial nerve (VII)']
     },
     'depressor labii inferioris': {
       'name': 'depressor labii inferioris',
       'origin': ['outer surface of mandible along oblique line'],
       'insertion': ['skin of lower lip'],
       'action': ['depresses and draws lower lip laterally'],
-      'nerve': ['mandibular branch of facial nerve (7)']
+      'nerve': ['mandibular branch of facial nerve (VII)']
     },
     'diaphragm': {
       'name': 'diaphragm',
-      'origin': ['vertebral: crura from bodies of L1, 2 (left), L1, 3 (right)', 'costal: medial and lateral arcuate ligaments, inner aspect of lower six ribs', 'sternal: two slips from posterior aspect of <phoneme alphabet="ipa" ph="ˈzaɪ.fɔɪd">xiphoid</phoneme>'],
+      'origin': ['vertebral: crura from bodies of L1, 2 (left), L1, 3 (right)', 'costal: medial and lateral arcuate ligaments, inner aspect of lower six ribs', 'sternal: two slips from posterior aspect of xiphoid'],
       'insertion': ['central tendon'],
       'action': ['inspiration', 'assists in raising intra-abdominal pressure'],
       'nerve': ['phrenic nerve (motor) (C3, 4, 5)', 'sensory: phrenic, intercostals (6 through 12) and upper two lumbar nerve roots']
@@ -245,12 +245,12 @@ module.exports = {
       'origin': ['anterior belly: digastric fossa on posterior surface of symphysis menti', 'posterior belly: base of medial aspect of mastoid process'],
       'insertion': ['fibrous loop to lesser cornu of hyoid bone'],
       'action': ['elevates hyoid bone', 'aids swallowing', 'depresses mandible'],
-      'nerve': ['anterior belly: mylohyoid nerve (5)', 'posterior belly: facial nerve (7)']
+      'nerve': ['anterior belly: mylohyoid nerve (V)', 'posterior belly: facial nerve (VII)']
     },
-    'erector spinae spinalis': { // did you mean spinalis?
-      'name': 'erector spinae <phoneme alphabet="ipa" ph="spɪˈnæ.lɪs">spinalis</phoneme>',
-      'origin': ['<phoneme alphabet="ipa" ph="spaɪ.nɪs">spinous</phoneme> processes'],
-      'insertion': ['<phoneme alphabet="ipa" ph="spaɪ.nɪs">spinous</phoneme> processes six levels above'],
+    'erector spinae spinalis': {
+      'name': 'erector spinae spinalis',
+      'origin': ['spinous processes'],
+      'insertion': ['spinous processes six levels above'],
       'action': ['laterally flexes spine'],
       'nerve': ['posterior primary rami']
     },
@@ -269,29 +269,29 @@ module.exports = {
       'nerve': ['posterior primary rami']
     },
     'extensor carpi radialis brevis': {
-      'name': 'extensor <phoneme alphabet="ipa" ph="kɑr.pi">carpi</phoneme> <phoneme alphabet="ipa" ph="reɪ.diˈæl.ɪs">radialis</phoneme> brevis',
-      'origin': ['common extensor origin on anterior aspect of lateral <phoneme alphabet="ipa" ph="ɛpɪkɑndaɪl">epicondyle</phoneme> of humerus'],
+      'name': 'extensor carpi radialis brevis',
+      'origin': ['common extensor origin on anterior aspect of lateral epicondyle of humerus'],
       'insertion': ['posterior base of third metacarpal'],
       'action': ['extends and abducts hand at wrist'],
       'nerve': ['posterior interosseous nerve (C7, 8)']
     },
     'extensor carpi radialis longus': {
-      'name': 'extensor <phoneme alphabet="ipa" ph="kɑr.pi">carpi</phoneme> <phoneme alphabet="ipa" ph="reɪ.diˈæl.ɪs">radialis</phoneme> longus',
-      'origin': ['lower third of lateral <phoneme alphabet="ipa" ph="su.prə.kɑn.dɪ.lɑr">supracondylar</phoneme> ridge of humerus', 'lateral intermuscular septum'],
+      'name': 'extensor carpi radialis longus',
+      'origin': ['lower third of lateral supracondylar ridge of humerus', 'lateral intermuscular septum'],
       'insertion': ['posterior base of second metacarpal'],
       'action': ['extends and abducts hand at wrist'],
       'nerve': ['radial nerve (C6, 7)']
     },
     'extensor carpi ulnaris': {
-      'name': 'extensor <phoneme alphabet="ipa" ph="kɑr.pi">carpi</phoneme> <phoneme alphabet="ipa" ph="ʌl.neɪr.ɪs">ulnaris</phoneme>',
-      'origin': ['common extensor origin on anterior aspect of lateral <phoneme alphabet="ipa" ph="ɛpɪkɑndaɪl">epicondyle</phoneme> of humerus'],
+      'name': 'extensor carpi ulnaris',
+      'origin': ['common extensor origin on anterior aspect of lateral epicondyle of humerus'],
       'insertion': ['base of fifth metacarpal via groove by ulnar styloid'],
       'action': ['extends and adducts hand at wrist'],
       'nerve': ['posterior interosseous']
     },
     'extensor digiti minimi': {
       'name': 'extensor digiti minimi',
-      'origin': ['common extensor origin on anterior aspect of lateral <phoneme alphabet="ipa" ph="ɛpɪkɑndaɪl">epicondyle</phoneme> of humerus'],
+      'origin': ['common extensor origin on anterior aspect of lateral epicondyle of humerus'],
       'insertion': ['extensor expansion of little finger'],
       'action': ['extends all joints of little finger'],
       'nerve': ['posterior interosseous nerve (C7, 8)']
@@ -300,7 +300,7 @@ module.exports = {
       'name': 'extensor digitorum brevis',
       'origin': ['superior surface of anterior calcaneus'],
       'insertion': ['four tendons into proximal phalanx of big toe', 'long extensor tendons to toes two, three, and four'],
-      'action': ['extends toes when foot fully <phoneme alphabet="ipa" ph="ˈdor.si.flɛkst">dorsiflexed</phoneme>'],
+      'action': ['extends toes when foot fully dorsiflexed'],
       'nerve': ['deep peroneal nerve (L5, S1)']
     },
     'extensor digitorum longus': {
@@ -334,39 +334,39 @@ module.exports = {
     'extensor pollicis brevis': {
       'name': 'extensor pollicis brevis',
       'origin': ['lower third of posterior shaft of radius and adjacent interosseous membrane'],
-      'insertion': ['over tendons of radial extensors', '<phoneme alphabet="ipa" ph="breɪ.ki.oʊ.reɪ.di.æl.ɪs">brachioradialis</phoneme> to base of proximal phalanx of thumb'],
+      'insertion': ['over tendons of radial extensors', 'brachioradialis to base of proximal phalanx of thumb'],
       'action': ['extends metacarpophalangeal joint of thumb'],
       'nerve': ['posterior interosseous nerve (C7, 8)']
     },
     'extensor pollicis longus': {
       'name': 'extensor pollicis longus',
       'origin': ['middle third of posterior ulna', 'adjacent interosseous membrane'],
-      'insertion': ['base of distal phalanx of thumb via Lister\'s <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəl">tubercle</phoneme>'],
+      'insertion': ['base of distal phalanx of thumb via Lister\'s tubercle'],
       'action': ['extends interphalangeal and metacarpophalangeal joints of thumb'],
       'nerve': ['posterior interosseous nerve (C7, 8)']
     },
-    'external oblique abdominis': { // external oblique or external abdominal oblique
+    'external oblique abdominis': {
       'name': 'external oblique abdominis',
       'origin': ['anterior angles of lower eight ribs'],
-      'insertion': ['outer anterior half of iliac crest', 'inguinal ligament', 'pubic <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəl">tubercle</phoneme> and crest', '<phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme> of anterior rectus sheath'],
+      'insertion': ['outer anterior half of iliac crest', 'inguinal ligament', 'pubic tubercle and crest', 'aponeurosis of anterior rectus sheath'],
       'action': ['supports abdominal wall', 'assists forced expiration', 'aids raising intra-abdominal pressure', 'abducts and rotates trunk'],
       'nerve': ['anterior primary rami (T7 through 12)']
     },
     'flexor carpi radialis': {
-      'name': 'flexor <phoneme alphabet="ipa" ph="kɑr.pi">carpi</phoneme> <phoneme alphabet="ipa" ph="reɪ.diˈæl.ɪs">radialis</phoneme>',
-      'origin': ['common flexor origin of medial <phoneme alphabet="ipa" ph="ɛpɪkɑndaɪl">epicondyle</phoneme> of humerus'],
+      'name': 'flexor carpi radialis',
+      'origin': ['common flexor origin of medial epicondyle of humerus'],
       'insertion': ['bases of second and third metacarpals via groove in trapezium and slip to scaphoid'],
       'action': ['flexes and abducts wrist'],
       'nerve': ['median nerve']
     },
     'flexor carpi ulnaris': {
-      'name': 'flexor <phoneme alphabet="ipa" ph="kɑr.pi">carpi</phoneme> <phoneme alphabet="ipa" ph="ʌl.neɪr.ɪs">ulnaris</phoneme>',
-      'origin': ['for humeral head: common flexor origin of medial <phoneme alphabet="ipa" ph="ɛpɪkɑndaɪl">epicondyle</phoneme>', 'for ulnar head: <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme> from medial <phoneme alphabet="ipa" ph="əˈlɛk.rə.nɑn">olecranon</phoneme> and upper three quarters subcutaneous border of ulna'],
+      'name': 'flexor carpi ulnaris',
+      'origin': ['humeral head: common flexor origin of medial epicondyle', 'ulnar head: aponeurosis from medial olecranon and upper three quarters subcutaneous border of ulna'],
       'insertion': ['pisiform', 'hook of hamate', 'base of fifth metacarpal via pisohamate and pisometacarpal ligaments'],
       'action': ['flexes and adducts wrist', 'fixes pisiform during action of hypothenar muscles'],
       'nerve': ['ulnar nerve (C8, T1)']
     },
-    'flexor digiti minimi brevis of foot': { // hand or foot?
+    'flexor digiti minimi brevis of foot': {
       'name': 'flexor digiti minimi brevis of foot',
       'origin': ['base of fifth metatarsal', 'sheath of peroneus longus'],
       'insertion': ['lateral side of base of proximal phalanx of little toe'],
@@ -389,42 +389,42 @@ module.exports = {
     },
     'flexor digitorum longus': {
       'name': 'flexor digitorum longus',
-      'origin': ['posterior shaft of tibia below <phoneme alphabet="ipa" ph="so.liəl">soleal</phoneme> line and by broad <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme> from fibula'],
+      'origin': ['posterior shaft of tibia below soleal line and by broad aponeurosis from fibula'],
       'insertion': ['base of distal phalanges of lateral four toes'],
       'action': ['distally flexes phalanges of lateral four toes and foot at ankle', 'supports lateral longitudinal arches'],
       'nerve': ['tibial nerve (S1, 2)']
     },
     'flexor digitorum profundus': {
       'name': 'flexor digitorum profundus',
-      'origin': ['medial <phoneme alphabet="ipa" ph="əˈlɛk.rə.nɑn">olecranon</phoneme>', 'upper three quarters of anterior and medial surface of ulna'],
+      'origin': ['medial olecranon', 'upper three quarters of anterior and medial surface of ulna'],
       'insertion': ['distal phalanges of medial four fingers'],
       'action': ['distally flexes interphalangeal joints', 'proximally flexes interphalangeal and metacarpophalangeal joints and wrist'],
       'nerve': ['median nerve', 'ulnar nerve']
     },
     'flexor digitorum superficialis': {
-      'name': 'flexor digitorum <phoneme alphabet="ipa" ph="su.pɚ.fɪʃ.iˈæl.ɪs">superficialis</phoneme>',
-      'origin': ['for humeral head: common flexor origin of medial <phoneme alphabet="ipa" ph="ɛpɪkɑndaɪl">epicondyle</phoneme> humerus and medial ligament of elbow', 'for ulnar head: medial border of coronoid process and fibrous arch', 'for radial head: entire length of anterior oblique line'],
+      'name': 'flexor digitorum superficialis',
+      'origin': ['humeral head: common flexor origin of medial epicondyle humerus and medial ligament of elbow', 'ulnar head: medial border of coronoid process and fibrous arch', 'radial head: entire length of anterior oblique line'],
       'insertion': ['tendons split to insert onto sides of middle phalanges of medial four fingers'],
       'action': ['proximally flexes interphalangeal joints and secondarily metacarpophalangeal joints and wrist'],
       'nerve': ['median nerve (C7, 8)']
     },
     'flexor hallucis brevis': {
       'name': 'flexor hallucis brevis',
-      'origin': ['cuboid', 'lateral cuneiform', '<phoneme alphabet="ipa" ph="tɪ.biˈæl.ɪs">tibialis</phoneme> posterior insertion over the two remaining cuneiforms'],
+      'origin': ['cuboid', 'lateral cuneiform', 'tibialis posterior insertion over the two remaining cuneiforms'],
       'insertion': ['medial tendon to medial side, and lateral tendon to lateral side, of base of proximal phalanx of big toe via sesamoids'],
       'action': ['flexes metatarsophalangeal joint of big toe', 'supports medial longitudinal arch'],
       'nerve': ['medial plantar nerve (S2, 3)']
     },
     'flexor hallucis longus': {
       'name': 'flexor hallucis longus',
-      'origin': ['lower two thirds of posterior fibula between median crest and posterior border', 'lower intermuscular septum and <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme> of flexor digitorum longus'],
+      'origin': ['lower two thirds of posterior fibula between median crest and posterior border', 'lower intermuscular septum and aponeurosis of flexor digitorum longus'],
       'insertion': ['base of distal phalanx of big toe and slips to medial two tendons of flexor digitorum longus'],
       'action': ['distally flexes phalanx of big toe', 'flexes foot at ankle', 'supports medial longitudinal arch'],
       'nerve': ['tibial nerve (S2, 3)']
     },
     'flexor pollicis brevis': {
       'name': 'flexor pollicis brevis',
-      'origin': ['flexor retinaculum and <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəl">tubercle</phoneme> of trapezium'],
+      'origin': ['flexor retinaculum and tubercle of trapezium'],
       'insertion': ['base of proximal phalanx of thumb'],
       'action': ['flexes metacarpophalangeal joint of thumb'],
       'nerve': ['recurrent branch of median nerve (C8, T1)']
@@ -439,44 +439,44 @@ module.exports = {
     'frontalis': {
       'name': 'frontalis',
       'origin': ['occipital: highest nuchal line and mastoid process', 'frontal: superior fibers of upper facial muscles'],
-      'insertion': ['galeal <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme>'],
-      'action': ['wrinkles forehead', 'fixes galeal <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme>'],
-      'nerve': ['posterior auricular and temporal branches of facial nerve (7)']
+      'insertion': ['galeal aponeurosis'],
+      'action': ['wrinkles forehead', 'fixes galeal aponeurosis'],
+      'nerve': ['posterior auricular and temporal branches of facial nerve (VII)']
     },
     'gastrocnemius': {
       'name': 'gastrocnemius',
-      'origin': ['for lateral head: posterior surface of lateral <phoneme alphabet="ipa" ph="kɑndaɪl">condyle</phoneme> of femur and highest of three facets on lateral <phoneme alphabet="ipa" ph="kɑndaɪl">condyle</phoneme>', 'for medial head: posterior surface of femur above medial <phoneme alphabet="ipa" ph="kɑndaɪl">condyle</phoneme>'],
+      'origin': ['lateral head: posterior surface of lateral condyle of femur and highest of three facets on lateral condyle', 'medial head: posterior surface of femur above medial condyle'],
       'insertion': ['tendo calcaneus to middle of three facets on posterior aspect of calcaneus'],
       'action': ['plantar flexes foot', 'flexes knee'],
       'nerve': ['tibial nerve (S1, 2)']
     },
     'gemellus inferior': {
       'name': 'gemellus inferior',
-      'origin': ['upper border of <phoneme alphabet="ipa" ph="ˈɪs.kil">ischial</phoneme> tuberosity'],
-      'insertion': ['middle part of medial aspect of greater <phoneme alphabet="ipa" ph="troʊˈkæn.tɚ">trochanter</phoneme> of femur'],
+      'origin': ['upper border of ischial tuberosity'],
+      'insertion': ['middle part of medial aspect of greater trochanter of femur'],
       'action': ['laterally rotates and stabilizes hip'],
-      'nerve': ['nerve to quadratis <phoneme alphabet="ipa" ph="fɛˈmoʊr.ɪs">femoris</phoneme> (L4, 5, S1)']
+      'nerve': ['nerve to quadratis femoris (L4, 5, S1)']
     },
     'gemellus superior': {
       'name': 'gemellus superior',
-      'origin': ['spine of <phoneme alphabet="ipa" ph="ˈɪsˌkiʌm">ischium</phoneme>'],
-      'insertion': ['middle part of medial aspect of greater <phoneme alphabet="ipa" ph="troʊˈkæn.tɚ">trochanter</phoneme> of femur'],
+      'origin': ['spine of ischium'],
+      'insertion': ['middle part of medial aspect of greater trochanter of femur'],
       'action': ['laterally rotates and stabilizes hip'],
-      'nerve': ['nerve to <phoneme alphabet="ipa" ph="ɑb.tu.reɪ.tɚ">obturator</phoneme> internus (L5, S1, 2)']
+      'nerve': ['nerve to obturator internus (L5, S1, 2)']
     },
     'genioglossus': {
       'name': 'genioglossus',
       'origin': ['superior mental spine on posterior surface of symphysis menti'],
       'insertion': ['central mass of tongue and mucous membrane'],
       'action': ['protracts tongue'],
-      'nerve': ['hypoglossal nerve (12)']
+      'nerve': ['hypoglossal nerve (XII)']
     },
     'geniohyoid': {
       'name': 'geniohyoid',
       'origin': ['inferior mental spine on posterior surface of symphysis menti'],
       'insertion': ['superior border of body of hyoid bone'],
       'action': ['elevates and protracts hyoid bone', 'depresses mandible'],
-      'nerve': ['C1 fibers carried by hypoglossal nerve (12)']
+      'nerve': ['C1 fibers carried by hypoglossal nerve (XII)']
     },
     'gluteus maximus': {
       'name': 'gluteus maximus',
@@ -488,60 +488,60 @@ module.exports = {
     'gluteus medius': {
       'name': 'gluteus medius',
       'origin': ['outer surface of ilium between posterior and middle gluteal lines'],
-      'insertion': ['posterolateral surface of greater <phoneme alphabet="ipa" ph="troʊˈkæn.tɚ">trochanter</phoneme> of femur'],
+      'insertion': ['posterolateral surface of greater trochanter of femur'],
       'action': ['abducts and medially rotates hip', 'tilts pelvis on walking'],
       'nerve': ['superior gluteal nerve (L4, 5, S1)']
     },
     'gluteus minimus': {
       'name': 'gluteus minimus',
       'origin': ['outer surface of ilium between middle and inferior gluteal lines'],
-      'insertion': ['anterior surface of greater <phoneme alphabet="ipa" ph="troʊˈkæn.tɚ">trochanter</phoneme> of femur'],
+      'insertion': ['anterior surface of greater trochanter of femur'],
       'action': ['abducts and medially rotates hip', 'tilts pelvis on walking'],
       'nerve': ['superior gluteal nerve (L4, 5, S1)']
     },
     'gracilis': {
-      'name': '<phoneme alphabet="ipa" ph="ˈgræs əˌlɪs">gracilis</phoneme>',
-      'origin': ['outer surface of <phoneme alphabet="ipa" ph="ˈɪsˌkioʊ.pjubɪk">ischiopubic</phoneme> ramus'],
+      'name': 'gracilis',
+      'origin': ['outer surface of ischiopubic ramus'],
       'insertion': ['upper medial shaft of tibia below sartorius'],
       'action': ['adducts hip', 'flexes knee and medially rotates flexed knee'],
-      'nerve': ['anterior division of <phoneme alphabet="ipa" ph="ɑb.tu.reɪ.tɚ">obturator</phoneme> nerve (L2, 3)']
+      'nerve': ['anterior division of obturator nerve (L2, 3)']
     },
     'hyoglossus': {
-      'name': '<phoneme alphabet="ipa" ph="ˈhaɪ.oʊ.glɔ.sɪs">hyoglossus</phoneme>',
+      'name': 'hyoglossus',
       'origin': ['superior border of greater cornu of hyoid bone'],
       'insertion': ['lateral sides of tongue'],
       'action': ['depresses tongue'],
-      'nerve': ['hypoglossal nerve (12)']
+      'nerve': ['hypoglossal nerve (XII)']
     },
     'iliacus': {
       'name': 'iliacus',
       'origin': ['iliac fossa within abdomen'],
-      'insertion': ['lowermost surface of lesser <phoneme alphabet="ipa" ph="troʊˈkæn.tɚ">trochanter</phoneme> of femur'],
+      'insertion': ['lowermost surface of lesser trochanter of femur'],
       'action': ['flexes and medially rotates hip'],
       'nerve': ['femoral nerve in abdomen (L2, 3)']
     },
     'inferior oblique': {
       'name': 'inferior oblique',
       'origin': ['orbital surface of maxilla behind orbital margin'],
-      'insertion': ['inferior quadrant of <phoneme alphabet="ipa" ph="ˈskleɪr.ə">sclera</phoneme> behind equator of eyeball'],
+      'insertion': ['inferior quadrant of sclera behind equator of eyeball'],
       'action': ['elevates eye in adduction', 'laterally rotates eye in abduction'],
-      'nerve': ['inferior division of oculomotor nerve (3)']
+      'nerve': ['inferior division of oculomotor nerve (III)']
     },
     'inferior rectus': {
       'name': 'inferior rectus',
       'origin': ['inferior tendinous ring within orbit'],
-      'insertion': ['inferior <phoneme alphabet="ipa" ph="ˈskleɪr.ə">sclera</phoneme> anterior to equator of eyeball'],
+      'insertion': ['inferior sclera anterior to equator of eyeball'],
       'action': ['depresses eye', 'laterally rotates eye in adduction'],
-      'nerve': ['inferior division of oculomotor nerve (3)']
+      'nerve': ['inferior division of oculomotor nerve (III)']
     },
     'infraspinatus': {
-      'name': '<phoneme alphabet="ipa" ph="ɪn.frə.spɪn.eɪt.əs">infraspinatus</phoneme>',
-      'origin': ['medial three quarters of <phoneme alphabet="ipa" ph="ɪn.frə.spaɪn.əs">infraspinous</phoneme> fossa of scapula', 'fibrous intermuscular septa'],
+      'name': 'infraspinatus',
+      'origin': ['medial three quarters of infraspinous fossa of scapula', 'fibrous intermuscular septa'],
       'insertion': ['middle facet of greater tuberosity of humerus', 'capsule of shoulder joint'],
       'action': ['laterally rotates arm', 'stabilizes shoulder joint'],
       'nerve': ['suprascapular nerve (C5, 6)']
     },
-    'intercostals external': { // external intercostals? external, innermost, or internal?
+    'intercostals external': {
       'name': 'intercostals external',
       'origin': ['inferior border of ribs as far back as posterior angles'],
       'insertion': ['superior border of ribs below'],
@@ -562,35 +562,35 @@ module.exports = {
       'action': ['fixes intercostal spaces during respiration', 'aids forced inspiration by elevating ribs'],
       'nerve': ['muscular collateral branches of intercostal nerves']
     },
-    'internal oblique abdominis': { // internal abdominal oblique?
+    'internal oblique abdominis': {
       'name': 'internal oblique abdominis',
       'origin': ['lumbar fascia', 'anterior two thirds of iliac crest', 'lateral two thirds of inguinal ligament'],
-      'insertion': ['costal margin', '<phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme> of rectus sheath', 'conjoint tendon to pubic crest and <phoneme alphabet="ipa" ph="pɛkˈtɪn.i.əl">pectineal</phoneme> line'],
+      'insertion': ['costal margin', 'aponeurosis of rectus sheath', 'conjoint tendon to pubic crest and pectineal line'],
       'action': ['supports abdominal wall', 'assists forced respiration', 'aids raising intra-abdominal pressure', 'abducts and rotates trunk'],
       'nerve': ['anterior primary rami (T7 through 12)']
     },
-    'interossei dorsal of hand': { // dorsal interossei? hand or foot?
+    'interossei dorsal of hand': {
       'name': 'interossei dorsal of hand',
       'origin': ['bipennate from inner aspects of shafts of all metacarpals'],
       'insertion': ['proximal phalanges', 'dorsal extensor expansion on radial side of index and middle fingers and ulnar side of middle and ring fingers'],
       'action': ['abducts from axis of middle finger', 'flexes metacarpophalangeal joint while extending interphalangeal joints'],
       'nerve': ['deep branch of ulnar nerve (T1)']
     },
-    'interossei dorsal of foot': { // dorsal interossei? hand or foot?
+    'interossei dorsal of foot': {
       'name': 'interossei dorsal of foot',
       'origin': ['bipennate from inner aspects of shafts of all metatarsals'],
       'insertion': ['bases of proximal phalanges', 'dorsal extensor expansions of medial side of second toe and lateral sides of second, third, and fourth toes'],
       'action': ['abducts second, third, and fourth toes from axis of second toe', 'assists lumbricals in extending interphalangeal joints while flexing metatarsophalangeal joints'],
       'nerve': ['lateral plantar nerve (S2, 3)']
     },
-    'interossei palmar of hand': { // palmar interossei?
+    'interossei palmar of hand': {
       'name': 'interossei palmar of hand',
       'origin': ['anterior shafts of second, fourth, and fifth metacarpals'],
       'insertion': ['proximal phalanges', 'dorsal extensor expansion on ulnar side of index and radial side of ring and little fingers and to ulnar sesamoid of thumb'],
       'action': ['adducts to axis of middle finger', 'flexes metacarpophalangeal joint while extending interphalangeal joints'],
       'nerve': ['deep branch of ulnar nerve (T1)']
     },
-    'interossei plantar of foot': { // plantar interossei?
+    'interossei plantar of foot': {
       'name': 'interossei plantar of foot',
       'origin': ['inferomedial shafts of third, fourth, and fifth metatarsals'],
       'insertion': ['medial sides of bases of proximal phalanges with slips to dorsal extensor expansions of third, fourth, and fifth toes'],
@@ -599,8 +599,8 @@ module.exports = {
     },
     'interspinales': {
       'name': 'interspinales',
-      'origin': ['<phoneme alphabet="ipa" ph="spaɪ.nɪs">spinous</phoneme> processes'],
-      'insertion': ['<phoneme alphabet="ipa" ph="spaɪ.nɪs">spinous</phoneme> processes one above'],
+      'origin': ['spinous processes'],
+      'insertion': ['spinous processes one above'],
       'action': ['extension of spine'],
       'nerve': ['posterior primary rami']
     },
@@ -611,114 +611,114 @@ module.exports = {
       'action': ['laterally flexes spine'],
       'nerve': ['posterior primary rami']
     },
-    'intrinsic muscle of tongue': { // muscles?
+    'intrinsic muscle of tongue': {
       'name': 'intrinsic muscle of tongue',
       'origin': ['superior and inferior longitudinal', 'transverse and vertical elements'],
       'insertion': ['mucous membrane', 'septum', 'other muscles of tongue'],
       'action': ['alters shape of tongue', 'aids mastication, speech, and swallowing'],
-      'nerve': ['hypoglossal nerve (12)']
+      'nerve': ['hypoglossal nerve (XII)']
     },
     'ischiocavernosus': {
-      'name': '<phoneme alphabet="ipa" ph="ˈɪsˌkioʊ.kæ.vɚˈnoʊ.sɪs">ischiocavernosus</phoneme>',
-      'origin': ['medial aspect of <phoneme alphabet="ipa" ph="ˈɪsˌkiʌm">ischium</phoneme>', '<phoneme alphabet="ipa" ph="ˈɪsˌkioʊ.pjubɪk">ischiopubic</phoneme> ramus'],
-      'insertion': ['inferolateral <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme> over crura of penis or clitoris'],
+      'name': 'ischiocavernosus',
+      'origin': ['medial aspect of ischium', 'ischiopubic ramus'],
+      'insertion': ['inferolateral aponeurosis over crura of penis or clitoris'],
       'action': ['stabilizes erect penis'],
       'nerve': ['perineal branch of pudendal nerve (S2, 3, 4)']
     },
     'lateral cricoarytenoid': {
-      'name': 'lateral <phoneme alphabet="ipa" ph="kraɪ.koʊ əˈrɪt.ɪn.ɔɪd">cricoarytenoid</phoneme>',
-      'origin': ['lateral aspect of arch of <phoneme alphabet="ipa" ph="kraɪ.kɔɪd">cricoid</phoneme>'],
-      'insertion': ['muscular process of <phoneme alphabet="ipa" ph="əˈrɪt.ɪn.ɔɪd">arytenoid</phoneme> cartilage'],
-      'action': ['adducts and medially rotates <phoneme alphabet="ipa" ph="əˈrɪt.ɪn.ɔɪd">arytenoid</phoneme> cartilage'],
-      'nerve': ['recurrent laryngeal branch of vagus nerve (10)']
+      'name': 'lateral cricoarytenoid',
+      'origin': ['lateral aspect of arch of cricoid'],
+      'insertion': ['muscular process of arytenoid cartilage'],
+      'action': ['adducts and medially rotates arytenoid cartilage'],
+      'nerve': ['recurrent laryngeal branch of vagus nerve (X)']
     },
     'lateral pterygoid': {
       'name': 'lateral pterygoid',
-      'origin': ['for upper head: infratemporal surface of <phoneme alphabet="ipa" ph="ˈsfi.nɔɪd">sphenoid</phoneme> bone', 'for lower head: lateral surface of lateral pterygoid plate'],
-      'insertion': ['pterygoid fovea below <phoneme alphabet="ipa" ph="kɑn.dɪ.lɔɪd">condyloid</phoneme> process of mandible', 'intra-articular cartilage of temporomandibular joint'],
+      'origin': ['upper head: infratemporal surface of sphenoid bone', 'lower head: lateral surface of lateral pterygoid plate'],
+      'insertion': ['pterygoid fovea below condyloid process of mandible', 'intra-articular cartilage of temporomandibular joint'],
       'action': ['depresses and protracts mandible to open mouth', 'pulls forward cartilage of joint during opening of mouth', 'aids in chewing'],
       'nerve': ['nerves to lateral pterygoid']
     },
     'lateral rectus': {
       'name': 'lateral rectus',
       'origin': ['lateral tendinous ring within orbit'],
-      'insertion': ['lateral <phoneme alphabet="ipa" ph="ˈskleɪr.ə">sclera</phoneme> anterior to equator of eyeball'],
+      'insertion': ['lateral sclera anterior to equator of eyeball'],
       'action': ['abducts eye'],
-      'nerve': ['abducent nerve (6)']
+      'nerve': ['abducent nerve (VI)']
     },
     'latissimus dorsi': {
-      'name': '<phoneme alphabet="ipa" ph="ləˈtɪsˌɪm.ɪs ˈdor.saɪ">latissimus dorsi</phoneme>',
-      'origin': ['spine T7', '<phoneme alphabet="ipa" ph="spaɪ.nɪs">spinous</phoneme> processes and <phoneme alphabet="ipa" ph="ˈsup.rɪ.saɪ.nɪs">suprasinous</phoneme> ligaments of all lower thoracic, lumbar, and sacral vertebrae', 'lumbar fascia', 'posterior third iliac crest', 'last four ribs', 'inferior angle of scapula'],
+      'name': 'latissimus dorsi',
+      'origin': ['spine T7', 'spinous processes and suprasinous ligaments of all lower thoracic, lumbar, and sacral vertebrae', 'lumbar fascia', 'posterior third iliac crest', 'last four ribs', 'inferior angle of scapula'],
       'insertion': ['floor of bicipital groove of humerus'],
       'action': ['extends, adducts, and medially rotates arm', 'helps with deep inspiration and forced expiration'],
-      'nerve': ['<phoneme alphabet="ipa" ph="ðor.æs.ə.dors.əl">thoracodorsal</phoneme> nerve (C6, 7, 8)']
+      'nerve': ['thoracodorsal nerve (C6, 7, 8)']
     },
     'levator anguli oris': {
       'name': 'levator anguli oris',
-      'origin': ['anterior surface of maxilla below <phoneme alphabet="ipa" ph="ɪn.frə.orb.ɪt.əl">infraorbital</phoneme> foramen'],
+      'origin': ['anterior surface of maxilla below infraorbital foramen'],
       'insertion': ['outer end of upper lip and modiolus'],
       'action': ['elevates angle of mouth'],
-      'nerve': ['buccal branch of facial nerve (7)']
+      'nerve': ['buccal branch of facial nerve (VII)']
     },
-    'levator ani-coccygeus': { // coccygeus
+    'levator ani-coccygeus': {
       'name': 'levator ani-coccygeus',
-      'origin': ['<phoneme alphabet="ipa" ph="sæk.rəˈspaɪ.nɪs">sacrospinous</phoneme> ligament'],
-      'insertion': ['<phoneme alphabet="ipa" ph="ɑn.o kɑk.sɪd͡ʒ.iəl">anococcygeal</phoneme> body', 'coccyx'],
+      'origin': ['sacrospinous ligament'],
+      'insertion': ['anococcygeal body', 'coccyx'],
       'action': ['supports pelvic viscera'],
       'nerve': ['anterior primary rami (S4, 5)']
     },
-    'levator ani-iliococcygeus': { // iliococcygeus
+    'levator ani-iliococcygeus': {
       'name': 'levator ani-ilio-coccygeus',
-      'origin': ['posterior half of fascial line over <phoneme alphabet="ipa" ph="ɑb.tu.reɪ.tɚ">obturator</phoneme> internus', '<phoneme alphabet="ipa" ph="ˈɪs.kil">ischial</phoneme> spine'],
-      'insertion': ['<phoneme alphabet="ipa" ph="ɑn.o kɑk.sɪd͡ʒ.iəl">anococcygeal</phoneme> body'],
+      'origin': ['posterior half of fascial line over obturator internus', 'ischial spine'],
+      'insertion': ['anococcygeal body'],
       'action': ['supports pelvic viscera'],
       'nerve': ['anterior primary rami (S3, 4)']
     },
-    'levator ani-pubococcygeus': { // puboccycgeus
+    'levator ani-pubococcygeus': {
       'name': 'levator ani-pubo-coccygeus',
-      'origin': ['posterior surface of <phoneme alphabet="ipa" ph="pju.bɪs">pubis</phoneme>', 'anterior half of fascial line over <phoneme alphabet="ipa" ph="ɑb.tu.reɪ.tɚ">obturator</phoneme> internus'],
-      'insertion': ['<phoneme alphabet="ipa" ph="ɑn.o kɑk.sɪd͡ʒ.iəl">anococcygeal</phoneme> body'],
+      'origin': ['posterior surface of pubis', 'anterior half of fascial line over obturator internus'],
+      'insertion': ['anococcygeal body'],
       'action': ['supports pelvic viscera'],
       'nerve': ['anterior primary rami (S3, 4)']
     },
-    'levator ani-puborectalis': { // puborectalis
+    'levator ani-puborectalis': {
       'name': 'levator ani-puborectalis',
-      'origin': ['posterior surface of <phoneme alphabet="ipa" ph="pju.bɪs">pubis</phoneme>'],
+      'origin': ['posterior surface of pubis'],
       'insertion': ['midline sling posterior to rectum'],
       'action': ['supports and aids continence of rectum by maintaining anorectal angle'],
       'nerve': ['anterior primary rami (S3, 4)']
     },
-    'levator ani-pubovaginalis': { // pubovaginalis
+    'levator ani-pubovaginalis': {
       'name': 'levator ani-pubovaginalis',
-      'origin': ['posterior surface of <phoneme alphabet="ipa" ph="pju.bɪs">pubis</phoneme>'],
-      'insertion': ['midline <phoneme alphabet="ipa" ph="reɪ.fi">raphe</phoneme> posterior to vagina or prostate'],
+      'origin': ['posterior surface of pubis'],
+      'insertion': ['midline raphe posterior to vagina or prostate'],
       'action': ['supports anterior pelvic viscera'],
       'nerve': ['anterior primary rami (S3, 4)']
     },
     'levator labii superioris': {
       'name': 'levator labii superioris',
-      'origin': ['medial <phoneme alphabet="ipa" ph="ɪn.frə.orb.ɪt.əl">infraorbital</phoneme> margin'],
+      'origin': ['medial infraorbital margin'],
       'insertion': ['skin and muscle of upper lip'],
       'action': ['elevates and everts upper lip'],
-      'nerve': ['buccal branch of facial nerve (7)']
+      'nerve': ['buccal branch of facial nerve (VII)']
     },
     'levator labii superioris alaeque nasi': {
-      'name': 'levator labii superioris <phoneme alphabet="ipa" ph="əˈlɑ.kwə">alaeque</phoneme> <phoneme alphabet="ipa" ph="ˈneɪ.zi">nasi</phoneme>',
+      'name': 'levator labii superioris alaeque nasi',
       'origin': ['upper frontal process of maxilla'],
       'insertion': ['skin of lateral nostril', 'upper lip'],
       'action': ['dilates nostril', 'elevates upper lip'],
-      'nerve': ['buccal branch of facial nerve (7)']
+      'nerve': ['buccal branch of facial nerve (VII)']
     },
     'levator palpebrae superioris': {
-      'name': 'levator <phoneme alphabet="ipa" ph="ˈpæl.pə.bri">palpebrae</phoneme> superioris',
-      'origin': ['inferior aspect of lesser wing of <phoneme alphabet="ipa" ph="ˈsfi.nɔɪd">sphenoid</phoneme> bone'],
+      'name': 'levator palpebrae superioris',
+      'origin': ['inferior aspect of lesser wing of sphenoid bone'],
       'insertion': ['superior tarsal plate', 'skin of upper eyelid'],
       'action': ['elevates and retracts upper eyelid'],
-      'nerve': ['superior division of oculomotor nerve (3)', 'sympathetic to smooth muscle portion']
+      'nerve': ['superior division of oculomotor nerve (III)', 'sympathetic to smooth muscle portion']
     },
     'levator scapulae': {
       'name': 'levator scapulae',
-      'origin': ['posterior <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəls">tubercles</phoneme> of transverse processes of C1 through 4'],
+      'origin': ['posterior tubercles of transverse processes of C1 through 4'],
       'insertion': ['upper part of medial border of scapula'],
       'action': ['raises medial border of scapula'],
       'nerve': ['anterior primary rami of C3 and C4', 'dorsal scapular nerve (C5)']
@@ -726,9 +726,9 @@ module.exports = {
     'levator veli palatini': {
       'name': 'levator veli palatini',
       'origin': ['apex of inferior surface of petrous temporal bone', 'medial rim of auditory tube'],
-      'insertion': ['palatine <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme>'],
+      'insertion': ['palatine aponeurosis'],
       'action': ['elevates, retracts, and laterally deviates soft palate', 'opens auditory tube on swallowing'],
-      'nerve': ['pharyngeal branch of vagus nerve (10) with its motot fibers from cranial accessory nerve (11)']
+      'nerve': ['pharyngeal branch of vagus nerve (X) with its motot fibers from cranial accessory nerve (XI)']
     },
     'levatores costarum': {
       'name': 'levatores costarum',
@@ -739,26 +739,26 @@ module.exports = {
     },
     'longus capitis': {
       'name': 'longus capitis',
-      'origin': ['anterior <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəls">tubercles</phoneme> of transverse processes of C3 through 6'],
+      'origin': ['anterior tubercles of transverse processes of C3 through 6'],
       'insertion': ['anterior basilar occipital bone'],
       'action': ['flexes cervical spine and atlanto-occipital joint'],
       'nerve': ['anterior primary rami (C1 through 3)']
     },
     'longus colli': {
       'name': 'longus colli',
-      'origin': ['anterior body of T1 through 3', 'anterior <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəls">tubercles</phoneme> of transverse processes of C3 through 7'],
+      'origin': ['anterior body of T1 through 3', 'anterior tubercles of transverse processes of C3 through 7'],
       'insertion': ['anterior arch of atlas (C1)', 'bodies of C2 through 4'],
       'action': ['flexes and rotates cervical spine'],
       'nerve': ['anterior primary rami (C2 through 6)']
     },
-    'lumbricals of foot': { // lumbricals? foot or hand?
+    'lumbricals of foot': {
       'name': 'lumbricals of foot',
       'origin': ['lateral three: bipennate origin from cleft between the four tendons of flexor digitorum longus', 'medial one: unipennate origin from medial aspect of first tendon'],
       'insertion': ['dorsal extensor expansion'],
       'action': ['extends toes at interphalangeal joints', 'flexes metatarsophalangeal joints'],
       'nerve': ['first: medial plantar nerve (L4, 5)', '2 through 4: deep branch of lateral plantar nerve (S2, 3)']
     },
-    'lumbricals of hand': { // lumbricals? foot or hand?
+    'lumbricals of hand': {
       'name': 'lumbricals of hand',
       'origin': ['four tendons of flexor digitorum profundus', 'radial 2: radial side only', 'ulnar 2: cleft between tendons'],
       'insertion': ['extensor expansion of fingers 2 through 5 on the radial side'],
@@ -770,11 +770,11 @@ module.exports = {
       'origin': ['anterior two thirds of zygomatic arch', 'zygomatic process of maxilla'],
       'insertion': ['lateral surface of angle', 'lower ramus of mandible'],
       'action': ['elevates mandible'],
-      'nerve': ['anterior division of mandibular nerve (5)']
+      'nerve': ['anterior division of mandibular nerve (V)']
     },
     'medial pterygoid': {
       'name': 'medial pterygoid',
-      'origin': ['for deep head: medial side of lateral pterygoid plate and fossa between medial and lateral plates', 'for superficial head: tuberosity of maxilla and pyramidal process of palatine bone'],
+      'origin': ['deep head: medial side of lateral pterygoid plate and fossa between medial and lateral plates', 'superficial head: tuberosity of maxilla and pyramidal process of palatine bone'],
       'insertion': ['medial aspect of angle of mandible'],
       'action': ['elevates the mandible', 'assists closing the jaw', 'assists the lateral pterygoids in moving the jaw side to side'],
       'nerve': ['nerve to medial pterygoid']
@@ -782,48 +782,48 @@ module.exports = {
     'medial rectus': {
       'name': 'medial rectus',
       'origin': ['medial tendinous ring with orbit'],
-      'insertion': ['medial <phoneme alphabet="ipa" ph="ˈskleɪr.ə">sclera</phoneme> anterior to equator of eyeball'],
+      'insertion': ['medial sclera anterior to equator of eyeball'],
       'action': ['adducts eye'],
-      'nerve': ['inferior division oculomotor nerve (3)']
+      'nerve': ['inferior division oculomotor nerve (III)']
     },
     'mentalis': {
       'name': 'mentalis',
       'origin': ['incisive fossa on anterior aspect of mandible'],
       'insertion': ['skin of chin'],
       'action': ['elevates and wrinkles skin of chin', 'protrudes lower lip'],
-      'nerve': ['mandibular branch of facial nerve (7)']
+      'nerve': ['mandibular branch of facial nerve (VII)']
     },
-    'musculus uvulae': { // m. uvulae?
+    'musculus uvulae': {
       'name': 'musculus uvulae',
       'origin': ['posterior border of hard palate'],
-      'insertion': ['palatine <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme>'],
+      'insertion': ['palatine aponeurosis'],
       'action': ['shapes uvula'],
-      'nerve': ['pharyngeal branch of vagus nerve (10) with its motor fibers from cranial accessory nerve (11)']
+      'nerve': ['pharyngeal branch of vagus nerve (X) with its motor fibers from cranial accessory nerve (XI)']
     },
     'mylohyoid': {
       'name': 'mylohyoid',
       'origin': ['mylohyoid line on internal aspect of mandible'],
-      'insertion': ['anterior three quarters: midline <phoneme alphabet="ipa" ph="reɪ.fi">raphe</phoneme>', 'posterior quarter: superior border of body of hyoid bone'],
+      'insertion': ['anterior three quarters: midline raphe', 'posterior quarter: superior border of body of hyoid bone'],
       'action': ['elevates hyoid bone', 'supports and raises floor of mouth', 'aids in mastication and swallowing'],
-      'nerve': ['mylohyoid nerve (5)']
+      'nerve': ['mylohyoid nerve (V)']
     },
-    'nasalis': { // compressor, dilator, and depressor
-      'name': '<phoneme alphabet="ipa" ph="ˈnæs.ə.liz">nasalis</phoneme>',
+    'nasalis': {
+      'name': 'nasalis',
       'origin': ['frontal process of maxilla'],
-      'insertion': ['nasal <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme>'],
+      'insertion': ['nasal aponeurosis'],
       'action': ['opens and closes nostrils'],
-      'nerve': ['buccal branch of facial nerve (7)']
+      'nerve': ['buccal branch of facial nerve (VII)']
     },
     'oblique arytenoid': {
-      'name': 'oblique <phoneme alphabet="ipa" ph="əˈrɪt.ɪn.ɔɪd">arytenoid</phoneme>',
-      'origin': ['muscular process of <phoneme alphabet="ipa" ph="əˈrɪt.ɪn.ɔɪd">arytenoid</phoneme> cartilage'],
-      'insertion': ['superior pole of opposite <phoneme alphabet="ipa" ph="əˈrɪt.ɪn.ɔɪd">arytenoid</phoneme> cartilage'],
-      'action': ['adducts <phoneme alphabet="ipa" ph="əˈrɪt.ɪn.ɔɪd">arytenoid</phoneme> cartilages'],
-      'nerve': ['recurrent laryngeal branch of vagus nerve (10)']
+      'name': 'oblique arytenoid',
+      'origin': ['muscular process of arytenoid cartilage'],
+      'insertion': ['superior pole of opposite arytenoid cartilage'],
+      'action': ['adducts arytenoid cartilages'],
+      'nerve': ['recurrent laryngeal branch of vagus nerve (X)']
     },
     'obliquus capitis inferior': {
       'name': 'obliquus capitis inferior',
-      'origin': ['<phoneme alphabet="ipa" ph="spaɪ.nɪs">spinous</phoneme> process of axis (C2)'],
+      'origin': ['spinous process of axis (C2)'],
       'insertion': ['lateral mass of atlas (C1)'],
       'action': ['rotates atlanto-axial joint'],
       'nerve': ['sub-occipital nerve']
@@ -836,25 +836,25 @@ module.exports = {
       'nerve': ['sub-occipital nerve']
     },
     'obturator externus': {
-      'name': '<phoneme alphabet="ipa" ph="ɑb.tu.reɪ.tɚ">obturator</phoneme> externus',
-      'origin': ['outer <phoneme alphabet="ipa" ph="ɑb.tu.reɪ.tɚ">obturator</phoneme> membrane', 'rim of <phoneme alphabet="ipa" ph="pju.bɪs">pubis</phoneme> and <phoneme alphabet="ipa" ph="ˈɪsˌkiʌm">ischium</phoneme> bordering membrane'],
-      'insertion': ['trochanteric fossa on medial surface of greater <phoneme alphabet="ipa" ph="troʊˈkæn.tɚ">trochanter</phoneme>'],
+      'name': 'obturator externus',
+      'origin': ['outer obturator membrane', 'rim of pubis and ischium bordering membrane'],
+      'insertion': ['trochanteric fossa on medial surface of greater trochanter'],
       'action': ['laterally rotates hip'],
-      'nerve': ['posterior division of <phoneme alphabet="ipa" ph="ɑb.tu.reɪ.tɚ">obturator</phoneme> nerve (L2, 3, 4)']
+      'nerve': ['posterior division of obturator nerve (L2, 3, 4)']
     },
-    'obturator internus': { // obturator internus a? b?
-      'name': '<phoneme alphabet="ipa" ph="ɑb.tu.reɪ.tɚ">obturator</phoneme> internus',
-      'origin': ['inner surface of <phoneme alphabet="ipa" ph="ɑb.tu.reɪ.tɚ">obturator</phoneme> membrane', 'rim of <phoneme alphabet="ipa" ph="pju.bɪs">pubis</phoneme> and <phoneme alphabet="ipa" ph="ˈɪsˌkiʌm">ischium</phoneme> bordering membrane'],
-      'insertion': ['middle part of medial aspect of greater <phoneme alphabet="ipa" ph="troʊˈkæn.tɚ">trochanter</phoneme> of femur'],
+    'obturator internus': {
+      'name': 'obturator internus',
+      'origin': ['inner surface of obturator membrane', 'rim of pubis and ischium bordering membrane'],
+      'insertion': ['middle part of medial aspect of greater trochanter of femur'],
       'action': ['laterally rotates and stabilizes hip'],
-      'nerve': ['nerve to <phoneme alphabet="ipa" ph="ɑb.tu.reɪ.tɚ">obturator</phoneme> internus (L5, S1, 2)']
+      'nerve': ['nerve to obturator internus (L5, S1, 2)']
     },
     'omohyoid': {
-      'name': '<phoneme alphabet="ipa" ph="o.mo.haɪ.oɪd">omohyoid</phoneme>',
+      'name': 'omohyoid',
       'origin': ['suprascapular ligament', 'adjacent scapula'],
       'insertion': ['inferior border of body of hyoid bone'],
       'action': ['depresses hyoid bone and larynx'],
-      'nerve': ['<phoneme alphabet="ipa" ph="ˈɑn.sə">ansa</phoneme> <phoneme alphabet="ipa" ph="sɚ.vɪ.kæ.lɪs">cervicalis</phoneme> nerve (C1, 2, 3)']
+      'nerve': ['ansa cervicalis nerve (C1, 2, 3)']
     },
     'opponen digiti minimi': {
       'name': 'opponen digiti minimi',
@@ -865,65 +865,65 @@ module.exports = {
     },
     'opponen pollicis': {
       'name': 'opponen pollicis',
-      'origin': ['flexor retinaculum', '<phoneme alphabet="ipa" ph="ˈtu.bɚ.kəl">tubercle</phoneme> of trapezium'],
+      'origin': ['flexor retinaculum', 'tubercle of trapezium'],
       'insertion': ['whole radial border of first metacarpal'],
       'action': ['flexes and medially rotates carpometacarpal and metacarpophalangeal joints of thumb'],
       'nerve': ['recurrent branch of median nerve (C8, T1)']
     },
     'orbicularis oculi': {
-      'name': 'orbicularis <phoneme alphabet="ipa" ph="ˈɑk.ju.laɪ">oculi</phoneme>',
+      'name': 'orbicularis oculi',
       'origin': ['medial orbital margin', 'lacrimal sac'],
-      'insertion': ['lateral palpebral <phoneme alphabet="ipa" ph="reɪ.fi">raphe</phoneme>'],
+      'insertion': ['lateral palpebral raphe'],
       'action': ['closes eyelids', 'aids passage and drainage of tears'],
-      'nerve': ['temporal and zygomatic branches of facial nerve (7)']
+      'nerve': ['temporal and zygomatic branches of facial nerve (VII)']
     },
     'orbicularis oris': {
       'name': 'orbicularis oris',
       'origin': ['near midline of anterior surface of maxilla and mandible', 'modiolus at angle of mouth'],
-      'insertion': ['mucous membrane of margin of lips', '<phoneme alphabet="ipa" ph="reɪ.fi">raphe</phoneme> with <phoneme alphabet="ipa" ph="ˈbʌk.sɪn.eɪ.dɚ">buccinator</phoneme> at modiolus'],
+      'insertion': ['mucous membrane of margin of lips', 'raphe with buccinator at modiolus'],
       'action': ['narrows orifice of mouth', 'purses lips', 'puckers edges of lips'],
       'nerve': ['incisivus labii superioris and inferioris']
     },
     'palatoglossus': {
       'name': 'palatoglossus',
-      'origin': ['palatine <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme>'],
+      'origin': ['palatine aponeurosis'],
       'insertion': ['posterolateral tongue'],
       'action': ['elevates posterior tongue', 'closes oropharyngeal isthmus', 'aids initiation of swallowing'],
-      'nerve': ['pharyngeal branch of vagus nerve (10) with its motor fibers from cranial accessory nerve (11)']
+      'nerve': ['pharyngeal branch of vagus nerve (X) with its motor fibers from cranial accessory nerve (XI)']
     },
     'palatopharyngeus': {
       'name': 'palatopharyngeus',
-      'origin': ['palatine <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme>', 'posterior margin of hard palate'],
+      'origin': ['palatine aponeurosis', 'posterior margin of hard palate'],
       'insertion': ['upper border of thyroid cartilage'],
-      'action': ['elevates pharynx and larynx', 'closes <phoneme alphabet="ipa" ph="neɪ.zo">naso</phoneme> pharyngeal isthmus in swallowing'],
-      'nerve': ['pharyngeal branch of vagus nerve (10) with its motor fibers from cranial accessory nerve (11)']
+      'action': ['elevates pharynx and larynx', 'closes naso pharyngeal isthmus in swallowing'],
+      'nerve': ['pharyngeal branch of vagus nerve (X) with its motor fibers from cranial accessory nerve (XI)']
     },
     'palmaris brevis': {
-      'name': '<phoneme alphabet="ipa" ph="pælˈmeɪr.ɪs">palmaris</phoneme> brevis',
-      'origin': ['flexor retinaculum', 'palmar <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme>'],
+      'name': 'palmaris brevis',
+      'origin': ['flexor retinaculum', 'palmar aponeurosis'],
       'insertion': ['skin of palm in dermis'],
       'action': ['steadies and corrugates skin of palm to help with grip'],
       'nerve': ['superficial branch of ulnar nerve (C8, T1)']
     },
     'palmaris longus': {
-      'name': '<phoneme alphabet="ipa" ph="pælˈmeɪr.ɪs">palmaris</phoneme> longus',
-      'origin': ['common flexor origin of medial <phoneme alphabet="ipa" ph="ɛpɪkɑndaɪl">epicondyle</phoneme> of humerus'],
-      'insertion': ['flexor retinaculum', 'palmar <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme>'],
-      'action': ['flexis wrist', 'tenses palmar <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme>'],
+      'name': 'palmaris longus',
+      'origin': ['common flexor origin of medial epicondyle of humerus'],
+      'insertion': ['flexor retinaculum', 'palmar aponeurosis'],
+      'action': ['flexis wrist', 'tenses palmar aponeurosis'],
       'nerve': ['median nerve (C7, 8)']
     },
     'pectineus': {
-      'name': '<phoneme alphabet="ipa" ph="pɛkˈtɪn.i.ʌs">pectineus</phoneme>',
-      'origin': ['<phoneme alphabet="ipa" ph="pɛkˈtɪn.i.əl">pectineal</phoneme> line of <phoneme alphabet="ipa" ph="pju.bɪs">pubis</phoneme>', 'narrow area of superior pubic ramus below it'],
-      'insertion': ['vertical line between spiral line and gluteal crest below lesser <phoneme alphabet="ipa" ph="troʊˈkæn.tɚ">trochanter</phoneme> of femur'],
+      'name': 'pectineus',
+      'origin': ['pectineal line of pubis', 'narrow area of superior pubic ramus below it'],
+      'insertion': ['vertical line between spiral line and gluteal crest below lesser trochanter of femur'],
       'action': ['flexes, adducts, and medially rotates hip'],
       'nerve': ['anterior division of femoral nerve (L2, 3)']
     },
     'pectoralis major': {
       'name': 'pectoralis major',
-      'origin': ['for clavicular head: anterior border of medial of the clavicle', 'for sternocostal head: lateral <phoneme alphabet="ipa" ph="mə.nu.bri.əm">manubrium</phoneme> and sternum, six upper costal cartilages, and external oblique <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme>'],
+      'origin': ['clavicular head: anterior border of medial of the clavicle', 'sternocostal head: lateral manubrium and sternum, six upper costal cartilages, and external oblique aponeurosis'],
       'insertion': ['lateral lip of bicipital groove of humerus', 'anterior lip of deltoid tuberosity'],
-      'action': ['for clavicular head: flexes and adducts arm', 'for sternocostal head: adducts and medially rotates arm'],
+      'action': ['clavicular head: flexes and adducts arm', 'sternocostal head: adducts and medially rotates arm'],
       'nerve': ['medial pectoral nerve', 'lateral pectoral nerve (C6, 7, 8)']
     },
     'pectoralis minor': {
@@ -957,55 +957,55 @@ module.exports = {
     'piriformis': {
       'name': 'piriformis',
       'origin': ['second, third, and fourth costotransverse base of anterior sacrum'],
-      'insertion': ['anterior part of medial aspect of greater <phoneme alphabet="ipa" ph="troʊˈkæn.tɚ">trochanter</phoneme> of femur'],
+      'insertion': ['anterior part of medial aspect of greater trochanter of femur'],
       'action': ['laterally rotates and stabilizes hip'],
       'nerve': ['anterior primary rami of S1, 2']
     },
     'plantaris': {
       'name': 'plantaris',
-      'origin': ['lateral <phoneme alphabet="ipa" ph="su.prə.kɑn.dɪ.lɑr">supracondylar</phoneme> ridge of femur above lateral head of gastrocnemius'],
+      'origin': ['lateral supracondylar ridge of femur above lateral head of gastrocnemius'],
       'insertion': ['tendo calcaneus'],
       'action': ['plantar flexes foot', 'flexes knee'],
       'nerve': ['tibial nerve (S1, 2)']
     },
     'platysma': {
-      'name': '<phoneme alphabet="ipa" ph="pləˈtɪs.mə">platysma</phoneme>',
+      'name': 'platysma',
       'origin': ['skin over lower neck and upper lateral chest'],
       'insertion': ['inferior border of mandible', 'skin over lower face and angle of mouth'],
       'action': ['depresses and wrinkles skin of lower face and mouth', 'aids forced depression of mandible'],
-      'nerve': ['cervical branch of facial nerve (7)']
+      'nerve': ['cervical branch of facial nerve (VII)']
     },
     'popliteus': {
-      'name': '<phoneme alphabet="ipa" ph="pʌˈplɪt.i.ʌs">popliteus</phoneme>',
-      'origin': ['posterior shaft of tibia above <phoneme alphabet="ipa" ph="so.liəl">soleal</phoneme> line and below tibial <phoneme alphabet="ipa" ph="kɑndaɪls">condyles</phoneme>'],
-      'insertion': ['middle of three facets on lateral surface of lateral <phoneme alphabet="ipa" ph="kɑndaɪl">condyle</phoneme> of femur'],
+      'name': 'popliteus',
+      'origin': ['posterior shaft of tibia above soleal line and below tibial condyles'],
+      'insertion': ['middle of three facets on lateral surface of lateral condyle of femur'],
       'action': ['unlocks extended knee by lateral rotation of femur on tibia', 'pulls back lateral meniscus'],
       'nerve': ['tibial nerve (L5, S1)']
     },
     'posterior cricoarytenoid': {
-      'name': 'posterior <phoneme alphabet="ipa" ph="kraɪ.koʊ əˈrɪt.ɪn.ɔɪd">cricoarytenoid</phoneme>',
-      'origin': ['posterior aspect of <phoneme alphabet="ipa" ph="kraɪ.kɔɪd">cricoid</phoneme> cartilage'],
-      'insertion': ['muscular process of <phoneme alphabet="ipa" ph="əˈrɪt.ɪn.ɔɪd">arytenoid</phoneme> cartilage'],
-      'action': ['abducts and laterally rotates <phoneme alphabet="ipa" ph="əˈrɪt.ɪn.ɔɪd">arytenoid</phoneme> cartilage'],
-      'nerve': ['recurrent laryngeal branch of vagus nerve (10)']
+      'name': 'posterior cricoarytenoid',
+      'origin': ['posterior aspect of cricoid cartilage'],
+      'insertion': ['muscular process of arytenoid cartilage'],
+      'action': ['abducts and laterally rotates arytenoid cartilage'],
+      'nerve': ['recurrent laryngeal branch of vagus nerve (X)']
     },
     'procerus': {
       'name': 'procerus',
       'origin': ['nasal bone and cartilages'],
       'insertion': ['skin of medial forehead'],
       'action': ['wrinkles and frowns forehead'],
-      'nerve': ['temporal branch of facial nerve (7)']
+      'nerve': ['temporal branch of facial nerve (VII)']
     },
     'pronator quadratus': {
       'name': 'pronator quadratus',
-      'origin': ['lower quarter of <phoneme alphabet="ipa" ph="ˈæn.te.ro">antero</phoneme> medial shaft of ulna'],
-      'insertion': ['lower quarter of <phoneme alphabet="ipa" ph="ˈæn.te.ro">antero</phoneme> lateral shaft of radius'],
+      'origin': ['lower quarter of antero medial shaft of ulna'],
+      'insertion': ['lower quarter of antero lateral shaft of radius'],
       'action': ['pronates forearm'],
       'nerve': ['anterior interosseous nerve (C8)']
     },
     'pronator teres': {
-      'name': 'pronator <phoneme alphabet="ipa" ph="ˈteɪr.iz">teres</phoneme>',
-      'origin': ['for humeral head: medial <phoneme alphabet="ipa" ph="ɛpɪkɑndaɪl">epicondyle</phoneme>, medial <phoneme alphabet="ipa" ph="su.prə.kɑn.dɪ.lɑr">supracondylar</phoneme> ridge, and medial intermuscular septum', 'for ulnar head: medial border of coronoid process'],
+      'name': 'pronator teres',
+      'origin': ['humeral head: medial epicondyle, medial supracondylar ridge, and medial intermuscular septum', 'ulnar head: medial border of coronoid process'],
       'insertion': ['middle of lateral surface of body of radius'],
       'action': ['pronates forearm', 'flexes elbow'],
       'nerve': ['median nerve (C6, 7)']
@@ -1013,7 +1013,7 @@ module.exports = {
     'psoas major': {
       'name': 'psoas major',
       'origin': ['transverse process of L1 through 5', 'bodies of T12 through L5', 'intervertebral discs below bodies of T12 through L4'],
-      'insertion': ['middle surface of lesser <phoneme alphabet="ipa" ph="troʊˈkæn.tɚ">trochanter</phoneme> of femur'],
+      'insertion': ['middle surface of lesser trochanter of femur'],
       'action': ['flexes and laterally rotates hip'],
       'nerve': ['anterior primary rami of L1, 2']
     },
@@ -1025,29 +1025,29 @@ module.exports = {
       'nerve': ['anterior primary rami of L1']
     },
     'pyramidalis': {
-      'name': '<phoneme alphabet="ipa" ph="pɪˈræ.mɪ.dæ.lɪs">pyramidalis</phoneme>',
+      'name': 'pyramidalis',
       'origin': ['pubic crest anterior to origin of rectus abdominis'],
       'insertion': ['lower linea alba'],
       'action': ['reinforces lower rectus sheath'],
       'nerve': ['subcostal nerve (T12)']
     },
     'quadratus femoris': {
-      'name': 'quadratus <phoneme alphabet="ipa" ph="fɛˈmoʊr.ɪs">femoris</phoneme>',
-      'origin': ['lateral border of <phoneme alphabet="ipa" ph="ˈɪs.kil">ischial</phoneme> tuberosity'],
-      'insertion': ['quadrate <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəl">tubercle</phoneme> of femur'],
+      'name': 'quadratus femoris',
+      'origin': ['lateral border of ischial tuberosity'],
+      'insertion': ['quadrate tubercle of femur'],
       'action': ['laterally rotates and stabilizes hip'],
-      'nerve': ['nerve to quadratus <phoneme alphabet="ipa" ph="fɛˈmoʊr.ɪs">femoris</phoneme> (L4, 5, S1)']
+      'nerve': ['nerve to quadratus femoris (L4, 5, S1)']
     },
     'quadratus lumborum': {
       'name': 'quadratus lumborum',
-      'origin': ['apexes of transverse process of L1 through 4', '<phoneme alphabet="ipa" ph="ˈɪl.i.oˌlʌm.bɑr">iliolumbar</phoneme> ligament', 'posterior third of iliac crest'],
+      'origin': ['apexes of transverse process of L1 through 4', 'iliolumbar ligament', 'posterior third of iliac crest'],
       'insertion': ['inferior border of twelfth rib'],
       'action': ['laterally flexes trunk', 'fixes twelfth rib during respiration'],
       'nerve': ['anterior primary rami (T12 through L3)']
     },
     'quadratus plantae': {
       'name': 'quadratus plantae',
-      'origin': ['for lateral head: tuberosity of calcaneus', 'for medial head: medial side of calcaneus'],
+      'origin': ['lateral head: tuberosity of calcaneus', 'medial head: medial side of calcaneus'],
       'insertion': ['tendons of flexor digitorum longus'],
       'action': ['flexes toes'],
       'nerve': ['lateral plantar nerve (S2, S3)']
@@ -1055,19 +1055,19 @@ module.exports = {
     'rectus abdominis': {
       'name': 'rectus abdominis',
       'origin': ['pubic crest', 'pubic symphysis'],
-      'insertion': ['fifth, sixth, and seventh costal cartilages', 'medial inferiorcostal margin', 'posterior aspect of <phoneme alphabet="ipa" ph="ˈzaɪ.fɔɪd">xiphoid</phoneme>'],
+      'insertion': ['fifth, sixth, and seventh costal cartilages', 'medial inferiorcostal margin', 'posterior aspect of xiphoid'],
       'action': ['flexes trunk', 'aids forced expiration', 'raises intra-abdominal pressure'],
       'nerve': ['anterior primary rami (T7 through 12)']
     },
-    'rectus capitis anterior': { // anterior? lateralis? posterior major? posterior minor?
+    'rectus capitis anterior': {
       'name': 'rectus capitis anterior',
       'origin': ['lateral mass of atlas (C1)'],
-      'insertion': ['basilar occipital bone anterior to occipital <phoneme alphabet="ipa" ph="kɑndaɪl">condyle</phoneme>'],
+      'insertion': ['basilar occipital bone anterior to occipital condyle'],
       'action': ['flexes atlanto-occipital joint'],
       'nerve': ['anterior primary rami of C1']
     },
     'rectus capitis lateralis': {
-      'name': 'rectus capitis <phoneme alphabet="ipa" ph="læ.dərˈæl.ɪs">lateralis</phoneme>',
+      'name': 'rectus capitis lateralis',
       'origin': ['lateral mass of atlas (C1)'],
       'insertion': ['jugular process of occipital bone'],
       'action': ['laterally flexes atlanto-occipital joint'],
@@ -1075,7 +1075,7 @@ module.exports = {
     },
     'rectus capitis posterior major': {
       'name': 'rectus capitis posterior major',
-      'origin': ['<phoneme alphabet="ipa" ph="spaɪ.nɪs">spinous</phoneme> process of axis (C2)'],
+      'origin': ['spinous process of axis (C2)'],
       'insertion': ['lateral half of inferior nuchal line'],
       'action': ['extends and rotates atlanto-occipital joint'],
       'nerve': ['sub-occipital nerve']
@@ -1088,22 +1088,22 @@ module.exports = {
       'nerve': ['sub-occipital nerve']
     },
     'rectus femoris': {
-      'name': 'rectus <phoneme alphabet="ipa" ph="fɛˈmoʊr.ɪs">femoris</phoneme>',
-      'origin': ['for straight head: anterior inferior iliac spine', 'for reflected head: ilium above acetabulum'],
+      'name': 'rectus femoris',
+      'origin': ['straight head: anterior inferior iliac spine', 'reflected head: ilium above acetabulum'],
       'insertion': ['quadriceps tendon to patella'],
       'action': ['extends leg at knee', 'flexes thigh at hip'],
       'nerve': ['posterior division of femoral nerve (L3, 4)']
     },
-    'rhomboid major': { // rhomboid? major or minor?
+    'rhomboid major': {
       'name': 'rhomboid major',
-      'origin': ['spines of T2 through T5', '<phoneme alphabet="ipa" ph="ˈsup.rɪ.saɪ.nɪs">suprasinous</phoneme> ligaments'],
+      'origin': ['spines of T2 through T5', 'suprasinous ligaments'],
       'insertion': ['lower half of posteromedial border of scapula'],
       'action': ['retracts and rotates scapula'],
       'nerve': ['dorsal scapular nerve (C5)']
     },
     'rhomboid minor': {
       'name': 'rhomboid minor',
-      'origin': ['nuchal ligaments', '<phoneme alphabet="ipa" ph="spaɪ.nɪs">spinous</phoneme> processes of C7 through T1'],
+      'origin': ['nuchal ligaments', 'spinous processes of C7 through T1'],
       'insertion': ['medial border of scapula'],
       'action': ['retracts and rotates scapula'],
       'nerve': ['dorsal scapular  nerve (C5)']
@@ -1113,14 +1113,14 @@ module.exports = {
       'origin': ['deep fascia of face and parotid'],
       'insertion': ['modiolus', 'skin at angle of mouth'],
       'action': ['retracts angle of mouth'],
-      'nerve': ['buccal branch of facial nerve (7)']
+      'nerve': ['buccal branch of facial nerve (VII)']
     },
     'salpingopharyngeus': {
-      'name': '<phoneme alphabet="ipa" ph="sælˌping.o.fəˈrɪn.d͡ʒi.əs">salpingopharyngeus</phoneme>',
+      'name': 'salpingopharyngeus',
       'origin': ['inferior cartilage and mucosa of pharyngeal orifice of auditory tube'],
       'insertion': ['upper border of thyroid cartilage', 'inferior constrictor muscle fibers'],
       'action': ['elevates pharynx and larynx', 'aids swallowing', 'opens auditory canal during swallowing'],
-      'nerve': ['pharyngeal branch of vagus nerve (10) with its motor fibers from cranial accessory nerve (11)']
+      'nerve': ['pharyngeal branch of vagus nerve (X) with its motor fibers from cranial accessory nerve (XI)']
     },
     'sartorius': {
       'name': 'sartorius',
@@ -1131,70 +1131,70 @@ module.exports = {
     },
     'scalenus anterior': {
       'name': 'scalenus anterior',
-      'origin': ['anterior <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəls">tubercles</phoneme> of transverse processes of C3 through 6'],
-      'insertion': ['scalene <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəl">tubercle</phoneme> on superior aspect of first rib'],
+      'origin': ['anterior tubercles of transverse processes of C3 through 6'],
+      'insertion': ['scalene tubercle on superior aspect of first rib'],
       'action': ['aids inspiration', 'laterally flexes neck'],
       'nerve': ['anterior primary rami of C5, 6']
     },
     'scalenus medius': {
       'name': 'scalenus medius',
-      'origin': ['posterior <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəls">tubercles</phoneme> of transverse processes of C2 through 7'],
+      'origin': ['posterior tubercles of transverse processes of C2 through 7'],
       'insertion': ['superior aspect of neck of first rib'],
       'action': ['aids inspiration'],
       'nerve': ['anterior primary rami of C3 through 8']
     },
     'scalenus minimus': {
       'name': 'scalenus minimus',
-      'origin': ['anterior <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəl">tubercle</phoneme> of transverse process of C7'],
+      'origin': ['anterior tubercle of transverse process of C7'],
       'insertion': ['suprapleural membrane'],
       'action': ['supports suprapleural membrane'],
       'nerve': ['anterior primary rami of C7']
     },
     'scalenus posterior': {
       'name': 'scalenus posterior',
-      'origin': ['posterior <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəls">tubercles</phoneme> of transverse processes of C4 through 6'],
+      'origin': ['posterior tubercles of transverse processes of C4 through 6'],
       'insertion': ['posterolateral surface of second rib'],
       'action': ['aids inspiration'],
       'nerve': ['anterior primary rami of C6 through 8']
     },
     'semimembranosus': {
-      'name': '<phoneme alphabet="ipa" ph="sɛ.mi.mɛm.brə.noʊ.sɪs">semimembranosus</phoneme>',
-      'origin': ['upper outer quadrant of posterior surface of <phoneme alphabet="ipa" ph="ˈɪs.kil">ischial</phoneme> tuberosity'],
-      'insertion': ['medial <phoneme alphabet="ipa" ph="kɑndaɪl">condyle</phoneme> of tibia'],
+      'name': 'semimembranosus',
+      'origin': ['upper outer quadrant of posterior surface of ischial tuberosity'],
+      'insertion': ['medial condyle of tibia'],
       'action': ['flexes and medially rotates knee', 'extends hip'],
       'nerve': ['tibial portion of sciatic nerve (L5, S1)']
     },
     'semitendinosus': {
-      'name': '<phoneme alphabet="ipa" ph="sɛ.mi.tɛn.dɪˈnoʊ.sɪs">semitendinosus</phoneme>',
-      'origin': ['upper inner quadrant of posterior surface of <phoneme alphabet="ipa" ph="ˈɪs.kil">ischial</phoneme> tuberosity'],
+      'name': 'semitendinosus',
+      'origin': ['upper inner quadrant of posterior surface of ischial tuberosity'],
       'insertion': ['upper medial shaft of tibia'],
       'action': ['flexes and medially rotates knee', 'extends hip'],
       'nerve': ['tibial portion of sciatic nerve (L5, S1)']
     },
     'serratus anterior': {
-      'name': '<phoneme alphabet="ipa" ph="səˈreɪ.tɪs">serratus</phoneme> anterior',
+      'name': 'serratus anterior',
       'origin': ['upper eight ribs', 'anterior intercostal membranes from midclavicular line'],
       'insertion': ['inner medial border of scapula'],
       'action': ['laterally rotates and protracts scapula'],
       'nerve': ['long thoracic nerve (C5, 6, 7)']
     },
     'serratus posterior inferior': {
-      'name': '<phoneme alphabet="ipa" ph="səˈreɪ.tɪs">serratus</phoneme> posterior inferior',
-      'origin': ['<phoneme alphabet="ipa" ph="spaɪ.nɪs">spinous</phoneme> processes', '<phoneme alphabet="ipa" ph="su.prə.spaɪ.nɪs">supraspinous</phoneme> ligaments of T11 through L2'],
+      'name': 'serratus posterior inferior',
+      'origin': ['spinous processes', 'supraspinous ligaments of T11 through L2'],
       'insertion': ['posterior aspect of ribs 9 through 12'],
       'action': ['assists forced expiration'],
       'nerve': ['anterior primary rami (T9 through 12)']
     },
     'serratus posterior superior': {
-      'name': '<phoneme alphabet="ipa" ph="səˈreɪ.tɪs">serratus</phoneme> posterior superior',
-      'origin': ['<phoneme alphabet="ipa" ph="spaɪ.nɪs">spinous</phoneme> processes', '<phoneme alphabet="ipa" ph="su.prə.spaɪ.nɪs">supraspinous</phoneme> ligaments of C7 through T2'],
+      'name': 'serratus posterior superior',
+      'origin': ['spinous processes', 'supraspinous ligaments of C7 through T2'],
       'insertion': ['posterior aspect of second through fifth ribs'],
       'action': ['assists forced inspiration'],
       'nerve': ['anterior primary rami (T2 through 5)']
     },
     'soleus': {
       'name': 'soleus',
-      'origin': ['<phoneme alphabet="ipa" ph="so.liəl">soleal</phoneme> line and middle third of posterior border of tibia', 'upper quarter of posterior shaft of fibula'],
+      'origin': ['soleal line and middle third of posterior border of tibia', 'upper quarter of posterior shaft of fibula'],
       'insertion': ['tendo calcaneus'],
       'action': ['plantar flexes foot'],
       'nerve': ['tibial nerve (S1, 2)']
@@ -1209,21 +1209,21 @@ module.exports = {
     'sphincter urethrae': {
       'name': 'sphincter urethrae',
       'origin': ['circular anatomical sphincter'],
-      'insertion': ['fuses with deep transverse <phoneme alphabet="ipa" ph="pɚˈɪn.i.aɪ">perinei</phoneme>'],
+      'insertion': ['fuses with deep transverse perinei'],
       'action': ['maintains continence of urine'],
       'nerve': ['perineal branch of pudendal nerve (S2, 3, 4)']
     },
     'splenius capitis': {
       'name': 'splenius capitis',
-      'origin': ['lower nuchal ligament', '<phoneme alphabet="ipa" ph="spaɪ.nɪs">spinous</phoneme> processes', '<phoneme alphabet="ipa" ph="su.prə.spaɪ.nɪs">supraspinous</phoneme> ligaments T1 through 3'],
+      'origin': ['lower nuchal ligament', 'spinous processes', 'supraspinous ligaments T1 through 3'],
       'insertion': ['lateral occiput between superior and inferior nuchal lines'],
       'action': ['extends and rotates cervical spine'],
       'nerve': ['posterior primary rami of C3, 4']
     },
     'splenius cervicis': {
       'name': 'splenius cervicis',
-      'origin': ['<phoneme alphabet="ipa" ph="spaɪ.nɪs">spinous</phoneme> processes', '<phoneme alphabet="ipa" ph="su.prə.spaɪ.nɪs">supraspinous</phoneme> ligaments of T3 through 6'],
-      'insertion': ['posterior <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəls">tubercles</phoneme> of transverse processes of C1 through 3'],
+      'origin': ['spinous processes', 'supraspinous ligaments of T3 through 6'],
+      'insertion': ['posterior tubercles of transverse processes of C1 through 3'],
       'action': ['extends and rotates cervical spine'],
       'nerve': ['posterior primary rami of C5, 6']
     },
@@ -1232,49 +1232,49 @@ module.exports = {
       'origin': ['posterior wall of middle ear'],
       'insertion': ['neck of stapes'],
       'action': ['protects and critically dampens ossicular chain'],
-      'nerve': ['facial nerve (7)']
+      'nerve': ['facial nerve (VII)']
     },
     'sternocleidomastoid': {
-      'name': '<phoneme alphabet="ipa" ph="ˌstɝ.no.klaɪd.oˈmæstɔɪd">sternocleidomastoid</phoneme> ',
-      'origin': ['anterior and superior <phoneme alphabet="ipa" ph="mə.nu.bri.əm">manubrium</phoneme>', 'superior medial third of clavicle'],
+      'name': 'sternocleidomastoid ',
+      'origin': ['anterior and superior manubrium', 'superior medial third of clavicle'],
       'insertion': ['lateral aspect of mastoid process', 'anterior half of superior nuchal line'],
       'action': ['flexes and laterally rotates cervical spine', 'protracts head', 'extends neck'],
       'nerve': ['spinal accessory nerve']
     },
     'sternohyoid': {
-      'name': '<phoneme alphabet="ipa" ph="ˌstɝ.noˈhaɪ.ɔɪd">sternohyoid</phoneme>',
-      'origin': ['superior lateral posterior aspect of <phoneme alphabet="ipa" ph="mə.nu.bri.əm">manubrium</phoneme>'],
+      'name': 'sternohyoid',
+      'origin': ['superior lateral posterior aspect of manubrium'],
       'insertion': ['inferior border of body of hyoid bone'],
       'action': ['depresses hyoid bone and larynx'],
-      'nerve': ['<phoneme alphabet="ipa" ph="ˈɑn.sə">ansa</phoneme> <phoneme alphabet="ipa" ph="sɚ.vɪ.kæ.lɪs">cervicalis</phoneme> nerve (C1, 2, 3)']
+      'nerve': ['ansa cervicalis nerve (C1, 2, 3)']
     },
     'sternothyroid': {
       'name': 'sternothyroid',
-      'origin': ['medial posterior aspect of <phoneme alphabet="ipa" ph="mə.nu.bri.əm">manubrium</phoneme>'],
+      'origin': ['medial posterior aspect of manubrium'],
       'insertion': ['oblique line of lamina of thyroid cartilage'],
       'action': ['depresses larynx'],
-      'nerve': ['<phoneme alphabet="ipa" ph="ˈɑn.sə">ansa</phoneme> <phoneme alphabet="ipa" ph="sɚ.vɪ.kæ.lɪs">cervicalis</phoneme> nerve (C1, 2, 3)']
+      'nerve': ['ansa cervicalis nerve (C1, 2, 3)']
     },
     'styloglossus': {
       'name': 'styloglossus',
       'origin': ['anterior surface and apex of styloid process', 'upper quarter stylohyoid ligament'],
       'insertion': ['superolateral sides of tongue'],
       'action': ['retracts and elevates tongue', 'aids initiation of swallowing'],
-      'nerve': ['hypoglossal nerve (12)']
+      'nerve': ['hypoglossal nerve (XII)']
     },
     'stylohyoid': {
       'name': 'stylohyoid',
       'origin': ['base of styloid process'],
       'insertion': ['base of greater cornu of hyoid bone'],
       'action': ['elevates and retracts hyoid bone', 'aids swallowing', 'elevates larynx'],
-      'nerve': ['mandibular branch of facial nerve (7)']
+      'nerve': ['mandibular branch of facial nerve (VII)']
     },
     'stylopharyngeus': {
       'name': 'stylopharyngeus',
       'origin': ['medial aspect of styloid process'],
       'insertion': ['posterolateral border of thyroid cartilage'],
       'action': ['elevates larynx and pharynx', 'aids swallowing'],
-      'nerve': ['muscular branch of glosso-pharyngeal nerve (9)']
+      'nerve': ['muscular branch of glosso-pharyngeal nerve (IX)']
     },
     'subclavius': {
       'name': 'subclavius',
@@ -1291,43 +1291,43 @@ module.exports = {
       'nerve': ['muscular collateral branches of intercostal nerves']
     },
     'subscapularis': {
-      'name': '<phoneme alphabet="ipa" ph="sʌbˈskæp.ju.leɪr.ɪs">subscapularis</phoneme>',
+      'name': 'subscapularis',
       'origin': ['medial two thirds of subscapular fossa'],
       'insertion': ['lesser tuberosity of humerus', 'upper medial lip of bicipital groove', 'capsule of shoulder joint'],
       'action': ['medially rotates arm', 'stabilizes shoulder joint'],
       'nerve': ['upper and lower subscapular nerves (C5, 6)']
     },
     'superficial transverse perinei': {
-      'name': 'superficial transverse <phoneme alphabet="ipa" ph="pɚˈɪn.i.aɪ">perinei</phoneme>',
-      'origin': ['body of <phoneme alphabet="ipa" ph="ˈɪsˌkiʌm">ischium</phoneme>'],
+      'name': 'superficial transverse perinei',
+      'origin': ['body of ischium'],
       'insertion': ['perineal body'],
       'action': ['fixes perineal body'],
       'nerve': ['perineal branch of pudendal nerve (S2, 3, 4)']
     },
     'superior oblique': {
       'name': 'superior oblique',
-      'origin': ['body of <phoneme alphabet="ipa" ph="ˈsfi.nɔɪd">sphenoid</phoneme> above tendinous ring'],
-      'insertion': ['posterosuperior quadrant of <phoneme alphabet="ipa" ph="ˈskleɪr.ə">sclera</phoneme> behind equator of eyeball'],
+      'origin': ['body of sphenoid above tendinous ring'],
+      'insertion': ['posterosuperior quadrant of sclera behind equator of eyeball'],
       'action': ['depresses eye in adduction', 'medially rotates eye in abduction'],
-      'nerve': ['trochlear nerve (4)']
+      'nerve': ['trochlear nerve (IV)']
     },
     'superior rectus': {
       'name': 'superior rectus',
       'origin': ['superior tendinous ring within orbit'],
-      'insertion': ['superior <phoneme alphabet="ipa" ph="ˈskleɪr.ə">sclera</phoneme> anterior to equator of eyeball'],
+      'insertion': ['superior sclera anterior to equator of eyeball'],
       'action': ['elevates eye', 'medially rotates eye in adduction'],
-      'nerve': ['superior division of oculomotor nerve (3)']
+      'nerve': ['superior division of oculomotor nerve (III)']
     },
     'supinator': {
       'name': 'supinator',
-      'origin': ['lateral <phoneme alphabet="ipa" ph="ɛpɪkɑndaɪl">epicondyle</phoneme> of humerus', 'supinator crest of ulna', 'radial collateral ligament', 'annular ligament'],
+      'origin': ['lateral epicondyle of humerus', 'supinator crest of ulna', 'radial collateral ligament', 'annular ligament'],
       'insertion': ['lateral proximal radial shaft'],
       'action': ['supinates forearm'],
       'nerve': ['posterior interosseous nerve (C5, 6)']
     },
     'supraspinatus': {
-      'name': '<phoneme alphabet="ipa" ph="su.prə.spɪ.neɪ.dɪs">supraspinatus</phoneme>',
-      'origin': ['medial three quarters of <phoneme alphabet="ipa" ph="su.prə.spaɪ.nɪs">supraspinous</phoneme> fossa of scapula'],
+      'name': 'supraspinatus',
+      'origin': ['medial three quarters of supraspinous fossa of scapula'],
       'insertion': ['superior facet on greater tuberosity of humerus', 'capsule of shoulder joint'],
       'action': ['abducts arm', 'stabilizes shoulder joint'],
       'nerve': ['suprascapular nerve (C5, 6)']
@@ -1337,14 +1337,14 @@ module.exports = {
       'origin': ['temporal fossa between inferior temporal line and infratemporal crest'],
       'insertion': ['medial and anterior aspect of coronoid process of mandible'],
       'action': ['elevates mandible'],
-      'nerve': ['deep temporal branchs from anterior division of mandibular nerve (5)']
+      'nerve': ['deep temporal branchs from anterior division of mandibular nerve (V)']
     },
     'temporoparietalis': {
-      'name': '<phoneme alphabet="ipa" ph="tɛmˈpor.oʊ.pəˌraɪ.ə.tæl.ɪs">temporoparietalis</phoneme>',
-      'origin': ['<phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme> above auricularis'],
-      'insertion': ['galeal <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme>'],
-      'action': ['fixes galeal <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme>'],
-      'nerve': ['temporal branch of facial nerve (7)']
+      'name': 'temporoparietalis',
+      'origin': ['aponeurosis above auricularis'],
+      'insertion': ['galeal aponeurosis'],
+      'action': ['fixes galeal aponeurosis'],
+      'nerve': ['temporal branch of facial nerve (VII)']
     },
     'tensor fascia lata': {
       'name': 'tensor fascia lata',
@@ -1362,97 +1362,97 @@ module.exports = {
     },
     'tensor veli palatini': {
       'name': 'tensor veli palatini',
-      'origin': ['scaphoid fossa', 'medial aspect of spine of <phoneme alphabet="ipa" ph="ˈsfi.nɔɪd">sphenoid</phoneme> bone'],
-      'insertion': ['palatine <phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme>'],
+      'origin': ['scaphoid fossa', 'medial aspect of spine of sphenoid bone'],
+      'insertion': ['palatine aponeurosis'],
       'action': ['tenses soft palate prior to elevation'],
       'nerve': ['never to medial pterygoid']
     },
     'teres major': {
-      'name': '<phoneme alphabet="ipa" ph="ˈteɪr.iz">teres</phoneme> major',
+      'name': 'teres major',
       'origin': ['posterior aspect of the inferior angle of scapula'],
       'insertion': ['medial lip of bicipital groove of humerus'],
       'action': ['medially rotates and adducts arm', 'stabilizes shoulder joint'],
       'nerve': ['lower subscapular nerve (C5, 6)']
     },
     'teres minor': {
-      'name': '<phoneme alphabet="ipa" ph="ˈteɪr.iz">teres</phoneme> minor',
+      'name': 'teres minor',
       'origin': ['lateral border of scapula'],
       'insertion': ['inferior facet of greater tuberosity of humerus', 'capsule of shoulder joint'],
       'action': ['laterally rotates arm', 'stabilizes shoulder joint'],
       'nerve': ['axillary nerve (C5, 6)']
     },
     'thyroarytenoid': {
-      'name': '<phoneme alphabet="ipa" ph="θaɪ.ro əˈrɪt.ɪn.ɔɪd">thyroarytenoid</phoneme>',
+      'name': 'thyroarytenoid',
       'origin': ['inner surface of thyroid cartilage'],
-      'insertion': ['vocal process of <phoneme alphabet="ipa" ph="əˈrɪt.ɪn.ɔɪd">arytenoid</phoneme> cartilage'],
-      'action': ['shortens and relaxes vocal cords by medial rotation and protraction of <phoneme alphabet="ipa" ph="əˈrɪt.ɪn.ɔɪd">arytenoid</phoneme> cartilage'],
-      'nerve': ['recurrent laryngeal branch of vagus nerve (10)']
+      'insertion': ['vocal process of arytenoid cartilage'],
+      'action': ['shortens and relaxes vocal cords by medial rotation and protraction of arytenoid cartilage'],
+      'nerve': ['recurrent laryngeal branch of vagus nerve (X)']
     },
     'thyroepiglotticus': {
       'name': 'thyroepiglotticus',
       'origin': ['lower posterior surface of thyroid cartilage'],
       'insertion': ['lateral border of epiglottis'],
       'action': ['aids closure of additus to larynx'],
-      'nerve': ['recurrent laryngeal branch of vagus nerve (10)']
+      'nerve': ['recurrent laryngeal branch of vagus nerve (X)']
     },
     'thyrohyoid': {
       'name': 'thyrohyoid',
       'origin': ['oblique line of lamina of thyroid cartilage'],
       'insertion': ['inferior border of body of hyoid bone'],
       'action': ['elevates larynx', 'depresses hyoid bone'],
-      'nerve': ['C1 fibers carried by hypoglossal nerve (12)']
+      'nerve': ['C1 fibers carried by hypoglossal nerve (XII)']
     },
     'tibialis anterior': {
-      'name': '<phoneme alphabet="ipa" ph="tɪ.biˈæl.ɪs">tibialis</phoneme> anterior',
+      'name': 'tibialis anterior',
       'origin': ['upper half of lateral shaft of tibia', 'interosseous membrane'],
       'insertion': ['inferomedial aspect of medial cuneiform', 'base of first metatarsal'],
       'action': ['extends and inverts foot at ankle', 'supports medial longitudinal arch of foot'],
       'nerve': ['deep peroneal nerve (L4, 5)']
     },
     'tibialis posterior': {
-      'name': '<phoneme alphabet="ipa" ph="tɪ.biˈæl.ɪs">tibialis</phoneme> posterior',
+      'name': 'tibialis posterior',
       'origin': ['upper half of posterior shaft of tibia', 'upper half of fibula between medial nerve crest and interosseous border', 'interosseous'],
       'insertion': ['tuberosity of navicular bone', 'all tarsal bones except talus', 'spring ligament'],
       'action': ['plantar flexes and inverts foot', 'supports medial longitudinal arch of foot'],
       'nerve': ['tibial nerve (L4, 5)']
     },
     'transverse arytenoid': {
-      'name': 'transverse <phoneme alphabet="ipa" ph="əˈrɪt.ɪn.ɔɪd">arytenoid</phoneme>',
-      'origin': ['posterior surface and muscular process of <phoneme alphabet="ipa" ph="əˈrɪt.ɪn.ɔɪd">arytenoid</phoneme> cartilage'],
+      'name': 'transverse arytenoid',
+      'origin': ['posterior surface and muscular process of arytenoid cartilage'],
       'insertion': ['corresponding surfaces of opposite cartilage'],
-      'action': ['adducts <phoneme alphabet="ipa" ph="əˈrɪt.ɪn.ɔɪd">arytenoid</phoneme> cartilage'],
-      'nerve': ['recurrent laryngeal branch of vagus nerve (10)']
+      'action': ['adducts arytenoid cartilage'],
+      'nerve': ['recurrent laryngeal branch of vagus nerve (X)']
     },
     'transversospinalis multifidus': {
-      'name': '<phoneme alphabet="ipa" ph="trænsˈvɝ.so.spɪˌnæ.lɪs">transversospinalis</phoneme> <phoneme alphabet="ipa" ph="mʌlˈtɪf.ɪˌdʌs">multifidus</phoneme>',
+      'name': 'transversospinalis multifidus',
       'origin': ['laminae of vertebra'],
-      'insertion': ['<phoneme alphabet="ipa" ph="spaɪ.nɪs">spinous</phoneme> processes two to three levels above'],
+      'insertion': ['spinous processes two to three levels above'],
       'action': ['extends spine'],
       'nerve': ['posterior primary rami']
     },
     'transversospinalis rotatores': {
-      'name': '<phoneme alphabet="ipa" ph="trænsˈvɝ.so.spɪˌnæ.lɪs">transversospinalis</phoneme> rotatores',
+      'name': 'transversospinalis rotatores',
       'origin': ['transverse processes'],
-      'insertion': ['<phoneme alphabet="ipa" ph="spaɪ.nɪs">spinous</phoneme> processes one above'],
+      'insertion': ['spinous processes one above'],
       'action': ['rotates spine'],
       'nerve': ['posterior primary rami']
     },
     'transversospinalis semispinalis': {
-      'name': '<phoneme alphabet="ipa" ph="trænsˈvɝ.so.spɪˌnæ.lɪs">transversospinalis</phoneme> <phoneme alphabet="ipa" ph="sɛm.i.spɪˌnæ.lɪs">semispinalis</phoneme>',
+      'name': 'transversospinalis semispinalis',
       'origin': ['transverse processes'],
-      'insertion': ['<phoneme alphabet="ipa" ph="spaɪ.nɪs">spinous</phoneme> processes above', 'occipital bone'],
+      'insertion': ['spinous processes above', 'occipital bone'],
       'action': ['extends head and spine', 'laterally flexes spine'],
       'nerve': ['posterior primary rami']
     },
     'transversus abdominis': {
       'name': 'transversus abdominis',
       'origin': ['costal margin', 'lumbar fascia', 'anterior two thirds of iliac crest', 'lateral half of inguinal ligament'],
-      'insertion': ['<phoneme alphabet="ipa" ph="æp.ə.nu.ros.ɪs">aponeurosis</phoneme> of posterior and anterior rectus sheath', 'conjoint tendon pubic crest and <phoneme alphabet="ipa" ph="pɛkˈtɪn.i.əl">pectineal</phoneme> line'],
+      'insertion': ['aponeurosis of posterior and anterior rectus sheath', 'conjoint tendon pubic crest and pectineal line'],
       'action': ['supports abdominal wall', 'aids forced expiration and raising of intra-abdominal pressure'],
       'nerve': ['anterior primary rami (T7 through 12)']
     },
     'transversus thoracis': {
-      'name': 'transversus <phoneme alphabet="ipa" ph="θorˈæs.ɪs">thoracis</phoneme>',
+      'name': 'transversus thoracis',
       'origin': ['lower third of inner aspect of sternum', 'lower three costosternal junctions'],
       'insertion': ['second to sixth costal cartilages'],
       'action': ['depresses upper ribs'],
@@ -1460,15 +1460,15 @@ module.exports = {
     },
     'trapezius': {
       'name': 'trapezius',
-      'origin': ['medial third of superior nuchal line', 'nuchal ligament', '<phoneme alphabet="ipa" ph="spaɪ.nɪs">spinous</phoneme> processes', '<phoneme alphabet="ipa" ph="su.prə.spaɪ.nɪs">supraspinous</phoneme> ligaments to T12'],
-      'insertion': ['external occipital protuberance', 'nuchal ligament', 'medial superior nuchal line', 'posterior border of the lateral third of clavicle', '<phoneme alphabet="ipa" ph="əˈkro.mi.ʌn">acromion</phoneme> process', 'spine of scapula'],
+      'origin': ['medial third of superior nuchal line', 'nuchal ligament', 'spinous processes', 'supraspinous ligaments to T12'],
+      'insertion': ['external occipital protuberance', 'nuchal ligament', 'medial superior nuchal line', 'posterior border of the lateral third of clavicle', 'acromion process', 'spine of scapula'],
       'action': ['laterally rotates, elevates, and retracts scapula'],
       'nerve': ['spinal accessory nerve (C1 through 5)']
     },
-    'triceps': { // triceps brachii?
+    'triceps': {
       'name': 'triceps',
-      'origin': ['for long head: infraglenoid <phoneme alphabet="ipa" ph="ˈtu.bɚ.kəl">tubercle</phoneme> of scapula', 'for lateral head: upper half of posterior humerus', 'for medial head: lower half of posterior humerus'],
-      'insertion': ['<phoneme alphabet="ipa" ph="əˈlɛk.rə.nɑn">olecranon</phoneme> process of ulna'],
+      'origin': ['long head: infraglenoid tubercle of scapula', 'lateral head: upper half of posterior humerus', 'medial head: lower half of posterior humerus'],
+      'insertion': ['olecranon process of ulna'],
       'action': ['extends elbow', 'long head stabilizes shoulder joint', 'medial head retracts capsule of elbow joint on extension'],
       'nerve': ['radial nerve (C7, 8)']
     },
@@ -1480,15 +1480,15 @@ module.exports = {
       'nerve': ['posterior division of femoral nerve (L3, 4)']
     },
     'vastus lateralis': {
-      'name': 'vastus <phoneme alphabet="ipa" ph="læ.dərˈæl.ɪs">lateralis</phoneme>',
-      'origin': ['upper <phoneme alphabet="ipa" ph="ɪn.tɝ.oˈtroʊ.kæn.teɪr.ɪk">interotrochanteric</phoneme> line', 'base of greater <phoneme alphabet="ipa" ph="troʊˈkæn.tɚ">trochanter</phoneme>', 'lateral linea aspera', 'lateral <phoneme alphabet="ipa" ph="su.prə.kɑn.dɪ.lɑr">supracondylar</phoneme> ridge', 'lateral intermuscular septum'],
+      'name': 'vastus lateralis',
+      'origin': ['upper interotrochanteric line', 'base of greater trochanter', 'lateral linea aspera', 'lateral supracondylar ridge', 'lateral intermuscular septum'],
       'insertion': ['lateral quadriceps tendon to patella'],
       'action': ['extends knee'],
       'nerve': ['posterior division of femoral nerve (L3, 4)']
     },
     'vastus medialis': {
       'name': 'vastus medialis',
-      'origin': ['lower <phoneme alphabet="ipa" ph="ɪn.tɝ.oˈtroʊ.kæn.teɪr.ɪk">interotrochanteric</phoneme> line', 'spiral line', 'medial linea aspera', 'medial intermuscular septum'],
+      'origin': ['lower interotrochanteric line', 'spiral line', 'medial linea aspera', 'medial intermuscular septum'],
       'insertion': ['medial quadriceps tendon to patella'],
       'action': ['extends knee', 'stabilizes patella'],
       'nerve': ['posterior division of femoral nerve (L3, 4)']
@@ -1498,14 +1498,14 @@ module.exports = {
       'origin': ['anterior surface of zygomatic bone'],
       'insertion': ['modiolus at angle of mouth'],
       'action': ['elevates and draws angle of mouth laterally'],
-      'nerve': ['buccal branch of facial nerve (7)']
+      'nerve': ['buccal branch of facial nerve (VII)']
     },
     'zygomaticus minor': {
       'name': 'zygomaticus minor',
-      'origin': ['lateral <phoneme alphabet="ipa" ph="ɪn.frə.orb.ɪt.əl">infraorbital</phoneme> margin'],
+      'origin': ['lateral infraorbital margin'],
       'insertion': ['skin and muscle of upper lip'],
       'action': ['elevates and everts upper lip'],
-      'nerve': ['buccal branch of facial nerve (7)']
+      'nerve': ['buccal branch of facial nerve (VII)']
     }
   }
 };
